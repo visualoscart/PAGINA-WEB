@@ -1,23 +1,3 @@
-/* ================================
-   VISUAL OSCART - JavaScript
-   Video Background Loop
-   ================================ */
-
-// Supabase Config
-const _supabaseUrl = 'https://umyrgxuotfqjefpsabex.supabase.co';
-const _supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVteXJneHVvdGZxamVmcHNhYmV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzNTY2NTUsImV4cCI6MjA5MDkzMjY1NX0.87aVyAV-AXmwoHUJYYLt-nDkqn_6ZrZeVSe5tJRIUYY';
-let supabase = null;
-
-try {
-    if (window.supabase) {
-        supabase = window.supabase.createClient(_supabaseUrl, _supabaseKey);
-    } else {
-        console.warn('Supabase SDK no cargado. Verifica tu conexin a internet o si ests usando un servidor local.');
-    }
-} catch (e) {
-    console.error('Error inicializando Supabase:', e);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
 
     // Elementos DOM
@@ -450,98 +430,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxClose = document.querySelector('.lightbox-close');
 
-    // Funcin Maestra de Carga de Datos (Supabase con Fallback Local)
-    async function getPortfolioData(category) {
-        // Si no hay Supabase o estamos localmente, usamos datos locales de inmediato
-        if (!supabase) {
-            console.log(`Usando datos locales para: ${category}`);
-            if (category === 'identidad') return window.marcasData || [];
-            if (category === 'redes') return window.redesData || [];
-            if (category === 'animacion') return window.animacionData || [];
-            return [];
-        }
-
-        try {
-            // Intentar cargar desde Supabase con un timeout de 3 segundos
-            const fetchPromise = (async () => {
-                const { data: projects, error: pError } = await supabase
-                    .from('projects')
-                    .select('*')
-                    .eq('category', category);
-
-                if (pError) throw pError;
-                if (!projects || projects.length === 0) return null;
-
-                const fullProjects = await Promise.all(projects.map(async (project) => {
-                    const { data: assets, error: aError } = await supabase
-                        .from('project_assets')
-                        .select('*')
-                        .eq('project_id', project.id)
-                        .order('order_index', { ascending: true });
-
-                    if (aError) throw aError;
-
-                    const mapped = { ...project };
-                    mapped.mockups = assets.filter(a => a.type === 'mockup').map(a => a.url);
-                    mapped.fondos = assets.filter(a => a.type === 'fondo').map(a => a.url);
-                    mapped.versiones = assets.filter(a => a.type === 'version').map(a => a.url);
-                    mapped.valores = assets.filter(a => a.type === 'valor').map(a => a.url);
-                    mapped.posts = assets.filter(a => a.type === 'post').map(a => a.url);
-                    mapped.animaciones = assets.filter(a => a.type === 'animacion').map(a => a.url);
-                    mapped.icons = assets.filter(a => a.type === 'icon').map(a => a.url);
-                    mapped.inspoImages = assets.filter(a => a.type === 'inspo').map(a => a.url);
-                    
-                    if (project.logo_btn_url) mapped.logoBtn = project.logo_btn_url;
-                    if (project.portada_url) mapped.portada = project.portada_url;
-                    if (project.video_hero_url) mapped.video = project.video_hero_url;
-                    if (project.vimeo_link) mapped.youtubeLink = project.vimeo_link;
-                    if (project.foto1_url) mapped.foto1 = project.foto1_url;
-                    if (project.foto2_url) mapped.foto2 = project.foto2_url;
-                    if (project.video_proceso_url) mapped.videoProceso = project.video_proceso_url;
-                    if (project.video_renders_url) mapped.videoRenders = project.video_renders_url;
-                    if (project.perfil_url) mapped.perfil = project.perfil_url;
-                    if (project.mano_url) mapped.mano = project.mano_url;
-
-                    return mapped;
-                }));
-                return fullProjects;
-            })();
-
-            // Timeout de 2.5 segundos para no dejar la web colgada
-            const timeoutPromise = new Promise((_, reject) => 
-                setTimeout(() => reject(new Error('Timeout Supabase')), 2500)
-            );
-
-            const result = await Promise.race([fetchPromise, timeoutPromise]);
-            
-            if (result) return result;
-            throw new Error('No data');
-
-        } catch (err) {
-            console.warn('Fallo Supabase, volcando a local:', err);
-            if (category === 'identidad') return window.marcasData || [];
-            if (category === 'redes') return window.redesData || [];
-            if (category === 'animacion') return window.animacionData || [];
-            return [];
-        }
-    }
-
     portfolioCatBtns.forEach(btn => {
-        btn.addEventListener('click', async () => {
+        btn.addEventListener('click', () => {
             const category = btn.getAttribute('data-category');
             
+            // Efecto visual de click
             btn.style.transform = 'scale(0.95)';
-            setTimeout(() => btn.style.transform = '', 150);
-
-            if (brandsGrid) brandsGrid.innerHTML = '<div class="loading-spinner">Cargando portafolio...</div>';
-
-            const projects = await getPortfolioData(category);
+            setTimeout(() => {
+                btn.style.transform = '';
+            }, 150);
 
             if (category === 'identidad') {
                 if (categoriesContainer) categoriesContainer.style.display = 'none';
                 if (brandsGridContainer) {
                     brandsGridContainer.style.display = 'flex';
-                    renderBrandsGrid(projects, 'IDENTIDAD VISUAL', 'brand');
+                    renderBrandsGrid(window.marcasData, 'IDENTIDAD VISUAL', 'brand');
                 }
                 if (portfolioLogoCont) portfolioLogoCont.style.display = 'none';
                 if (portfolioTitle) portfolioTitle.style.display = 'none';
@@ -550,7 +453,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (categoriesContainer) categoriesContainer.style.display = 'none';
                 if (brandsGridContainer) {
                     brandsGridContainer.style.display = 'flex';
-                    renderBrandsGrid(projects, 'GESTIN DE REDES', 'redes');
+                    renderBrandsGrid(window.redesData, 'GESTIN DE REDES', 'redes');
                 }
                 if (portfolioLogoCont) portfolioLogoCont.style.display = 'none';
                 if (portfolioTitle) portfolioTitle.style.display = 'none';
@@ -559,7 +462,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (categoriesContainer) categoriesContainer.style.display = 'none';
                 if (brandsGridContainer) {
                     brandsGridContainer.style.display = 'flex';
-                    renderBrandsGrid(projects, 'ANIMACIN DIGITAL', 'animacion');
+                    renderBrandsGrid(window.animacionData, 'ANIMACIN DIGITAL', 'animacion');
                 }
                 if (portfolioLogoCont) portfolioLogoCont.style.display = 'none';
                 if (portfolioTitle) portfolioTitle.style.display = 'none';
@@ -1078,31 +981,35 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', onScroll, { passive: true });
 
     // ================================
-    // INICIALIZACIÓN
+    // INICIALIZACIÓN MAESTRA
     // ================================
-    // ================================
-    // FAQ ACCORDION LOGIC
-    // ================================
+    
+    // 1. Funciones críticas de inicio inmediato
+    try {
+        handleHeroScroll();
+        onScroll();
+        console.log('✨ UI Core Ready');
+    } catch (e) {
+        console.error('Error in UI Core init:', e);
+    }
+
+    // 2. FAQ Accordion (Iniciado por separado para evitar fallos de script)
     const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(button => {
-        button.addEventListener('click', () => {
-            const item = button.parentElement;
-            const isActive = item.classList.contains('active');
-            
-            // Cerrar todas las demás tarjetas
-            document.querySelectorAll('.faq-item').forEach(otherItem => {
-                otherItem.classList.remove('active');
+    if (faqQuestions.length > 0) {
+        faqQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(otherItem => otherItem.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
             });
-
-            // Si no estaba activa, abrirla
-            if (!isActive) {
-                item.classList.add('active');
-            }
         });
-    });
+    }
 
-    handleHeroScroll();
-    onScroll();
+    // 3. Verificación de datos locales (Fallback preventivo)
+    if (!window.marcasData) {
+        console.warn('marcas_data.js no detectado, el portafolio dependerá 100% de Supabase.');
+    }
 
-    console.log('🎬 Visual Oscart - Video Loop Ready');
+    console.log('🎬 Visual Oscart - System Ready');
 });

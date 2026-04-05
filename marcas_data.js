@@ -1,104 +1,104 @@
 window.marcasData = [
     {
-        "id": "1 DISEÑO FUKU ARENAL",
+        "id": "1 DISENO FUKU ARENAL",
         "name": "Fuku Arenal",
-        "folderName": "1 DISEÑO FUKU ARENAL",
-        "logoBtn": "1 DISEÑO FUKU ARENAL/LOGO.jpg",
-        "portada": "1 DISEÑO FUKU ARENAL/PORTADA.png",
-        "video": "1 DISEÑO FUKU ARENAL/VIDEO.mp4",
+        "folderName": "1 DISENO FUKU ARENAL",
+        "logoBtn": "1 DISENO FUKU ARENAL/LOGO.jpg",
+        "portada": "1 DISENO FUKU ARENAL/PORTADA.png",
+        "video": "1 DISENO FUKU ARENAL/VIDEO.mp4",
         "concepto": "FUKU ARENAL es un alojamiento tipo Airbnb ubicado cerca del volcán Arenal, pensado para viajeros que desean escapar del ritmo acelerado de la ciudad y sumergirse en un entorno natural sin renunciar a la comodidad. Su propuesta se centra en ofrecer una experiencia eco-consciente y acogedora.",
         "mision": "Crear estancias memorables a través de detalles cuidados, hospitalidad auténtica y experiencias diseñadas para que cada huésped se sienta parte del destino.",
         "vision": "Ser el espacio donde cada viajero descubre una experiencia única que conecta con el lugar, la cultura y las emociones que quiere vivir.",
         "mockups": [
-            "1 DISEÑO FUKU ARENAL/MOCKUP 1.png",
-            "1 DISEÑO FUKU ARENAL/MOCKUP 2.jpg",
-            "1 DISEÑO FUKU ARENAL/MOCKUP3.png"
+            "1 DISENO FUKU ARENAL/MOCKUP 1.png",
+            "1 DISENO FUKU ARENAL/MOCKUP 2.jpg",
+            "1 DISENO FUKU ARENAL/MOCKUP3.png"
         ],
         "fondos": [
-            "1 DISEÑO FUKU ARENAL/FONDO 1.jpg",
-            "1 DISEÑO FUKU ARENAL/FONDO 2.jpg",
-            "1 DISEÑO FUKU ARENAL/FONDO 3.jpg",
-            "1 DISEÑO FUKU ARENAL/FONDO 4.jpg"
+            "1 DISENO FUKU ARENAL/FONDO 1.jpg",
+            "1 DISENO FUKU ARENAL/FONDO 2.jpg",
+            "1 DISENO FUKU ARENAL/FONDO 3.jpg",
+            "1 DISENO FUKU ARENAL/FONDO 4.jpg"
         ],
         "versiones": [
-            "1 DISEÑO FUKU ARENAL/VERSION 1.png",
-            "1 DISEÑO FUKU ARENAL/VERSION 2.png",
-            "1 DISEÑO FUKU ARENAL/VERSION 3.png"
+            "1 DISENO FUKU ARENAL/VERSION 1.png",
+            "1 DISENO FUKU ARENAL/VERSION 2.png",
+            "1 DISENO FUKU ARENAL/VERSION 3.png"
         ],
         "valores": [
-            "1 DISEÑO FUKU ARENAL/VALOR 1.png",
-            "1 DISEÑO FUKU ARENAL/VALOR 2.png",
-            "1 DISEÑO FUKU ARENAL/VALOR 3.png",
-            "1 DISEÑO FUKU ARENAL/VALOR 4.png",
-            "1 DISEÑO FUKU ARENAL/VALOR 5.png"
+            "1 DISENO FUKU ARENAL/VALOR 1.png",
+            "1 DISENO FUKU ARENAL/VALOR 2.png",
+            "1 DISENO FUKU ARENAL/VALOR 3.png",
+            "1 DISENO FUKU ARENAL/VALOR 4.png",
+            "1 DISENO FUKU ARENAL/VALOR 5.png"
         ]
     },
     {
-        "id": "2 DISEÑO RAVEN HOUSE",
+        "id": "2 DISENO RAVEN HOUSE",
         "name": "Raven House",
-        "folderName": "2 DISEÑO RAVEN HOUSE",
-        "logoBtn": "2 DISEÑO RAVEN HOUSE/LOGO.png",
-        "portada": "2 DISEÑO RAVEN HOUSE/PORTADA.png",
-        "video": "2 DISEÑO RAVEN HOUSE/VIDEO.mp4",
+        "folderName": "2 DISENO RAVEN HOUSE",
+        "logoBtn": "2 DISENO RAVEN HOUSE/LOGO.png",
+        "portada": "2 DISENO RAVEN HOUSE/PORTADA.png",
+        "video": "2 DISENO RAVEN HOUSE/VIDEO.mp4",
         "concepto": "Raven Store es un espacio donde la magia y el estilo se fusionan, ofreciendo un ambiente elegante, moderno y lleno de dinamismo. Este negocio familiar se especializa en trading card games, sublimación y figuras coleccionables.",
         "mision": "Crear un espacio donde la comunidad amante del coleccionismo y los juegos de estrategia encuentre productos únicos, atención cercana y soluciones rápidas, combinando elegancia, modernidad y un servicio comprometido que siempre va más allá.",
         "vision": "Convertirnos en la tienda de referencia para coleccionistas y jugadores en Costa Rica, reconocida por su estilo distintivo, su experiencia de compra personalizada y su capacidad de conseguir lo que cada cliente busca, fortaleciendo una comunidad apasionada y en crecimiento.",
         "mockups": [
-            "2 DISEÑO RAVEN HOUSE/MOCKUP 1.jpg",
-            "2 DISEÑO RAVEN HOUSE/MOCKUP 2.jpg",
-            "2 DISEÑO RAVEN HOUSE/MOCKUP 3.jpg"
+            "2 DISENO RAVEN HOUSE/MOCKUP 1.jpg",
+            "2 DISENO RAVEN HOUSE/MOCKUP 2.jpg",
+            "2 DISENO RAVEN HOUSE/MOCKUP 3.jpg"
         ],
         "fondos": [
-            "2 DISEÑO RAVEN HOUSE/FONDO 1.png",
-            "2 DISEÑO RAVEN HOUSE/FONDO 2.png",
-            "2 DISEÑO RAVEN HOUSE/FONDO 3.png",
-            "2 DISEÑO RAVEN HOUSE/FONDO 4.png"
+            "2 DISENO RAVEN HOUSE/FONDO 1.png",
+            "2 DISENO RAVEN HOUSE/FONDO 2.png",
+            "2 DISENO RAVEN HOUSE/FONDO 3.png",
+            "2 DISENO RAVEN HOUSE/FONDO 4.png"
         ],
         "versiones": [
-            "2 DISEÑO RAVEN HOUSE/VERSION 1.png",
-            "2 DISEÑO RAVEN HOUSE/VERSIOn 2.png",
-            "2 DISEÑO RAVEN HOUSE/VERSION 3.png"
+            "2 DISENO RAVEN HOUSE/VERSION 1.png",
+            "2 DISENO RAVEN HOUSE/VERSION 2.png",
+            "2 DISENO RAVEN HOUSE/VERSION 3.png"
         ],
         "valores": [
-            "2 DISEÑO RAVEN HOUSE/VALOR 1.png",
-            "2 DISEÑO RAVEN HOUSE/VALOR 2.png",
-            "2 DISEÑO RAVEN HOUSE/VALOR 3.png",
-            "2 DISEÑO RAVEN HOUSE/VALOR 4.png",
-            "2 DISEÑO RAVEN HOUSE/VALOR 5.png"
+            "2 DISENO RAVEN HOUSE/VALOR 1.png",
+            "2 DISENO RAVEN HOUSE/VALOR 2.png",
+            "2 DISENO RAVEN HOUSE/VALOR 3.png",
+            "2 DISENO RAVEN HOUSE/VALOR 4.png",
+            "2 DISENO RAVEN HOUSE/VALOR 5.png"
         ]
     },
     {
-        "id": "3 DISEÑO FREE WAY",
+        "id": "3 DISENO FREE WAY",
         "name": "Free Way",
-        "folderName": "3 DISEÑO FREE WAY",
-        "logoBtn": "3 DISEÑO FREE WAY/LOGO.png",
-        "portada": "3 DISEÑO FREE WAY/PORTADA.png",
-        "video": "3 DISEÑO FREE WAY/VIDEO.mp4",
+        "folderName": "3 DISENO FREE WAY",
+        "logoBtn": "3 DISENO FREE WAY/LOGO.png",
+        "portada": "3 DISENO FREE WAY/PORTADA.png",
+        "video": "3 DISENO FREE WAY/VIDEO.mp4",
         "concepto": "Free Way es una empresa de alquiler de vehículos especializada en el segmento turístico, dedicada a ofrecer soluciones de movilidad que elevan la forma en que los viajeros descubren Costa Rica.",
         "mision": "Brindar experiencias de movilidad que permitan a cada viajero descubrir Costa Rica con libertad, seguridad y un servicio profundamente humano. En Free Way nos comprometemos a ofrecer atención personalizada, procesos simples y vehículos confiables que conviertan cada recorrido en una aventura memorable.",
         "vision": "Ser la empresa de alquiler de vehículos más confiable y apreciada del segmento turístico, reconocida por elevar la experiencia de viaje a través de un servicio cercano, profesional y orientado a la excelencia, acompañando a cada cliente en la creación de rutas, historias y momentos inolvidables.",
         "mockups": [
-            "3 DISEÑO FREE WAY/MOCKUP 1.png",
-            "3 DISEÑO FREE WAY/MOCKUP 2.png",
-            "3 DISEÑO FREE WAY/MOCKUP 3.png"
+            "3 DISENO FREE WAY/MOCKUP 1.png",
+            "3 DISENO FREE WAY/MOCKUP 2.png",
+            "3 DISENO FREE WAY/MOCKUP 3.png"
         ],
         "fondos": [
-            "3 DISEÑO FREE WAY/FONDO 1.png",
-            "3 DISEÑO FREE WAY/FONDO 2.png",
-            "3 DISEÑO FREE WAY/FONDO 3.png",
-            "3 DISEÑO FREE WAY/FONDO 4.png"
+            "3 DISENO FREE WAY/FONDO 1.png",
+            "3 DISENO FREE WAY/FONDO 2.png",
+            "3 DISENO FREE WAY/FONDO 3.png",
+            "3 DISENO FREE WAY/FONDO 4.png"
         ],
         "versiones": [
-            "3 DISEÑO FREE WAY/VERSION 1.png",
-            "3 DISEÑO FREE WAY/VERSION 2.png",
-            "3 DISEÑO FREE WAY/VERSION 3.png"
+            "3 DISENO FREE WAY/VERSION 1.png",
+            "3 DISENO FREE WAY/VERSION 2.png",
+            "3 DISENO FREE WAY/VERSION 3.png"
         ],
         "valores": [
-            "3 DISEÑO FREE WAY/VALOR 1.png",
-            "3 DISEÑO FREE WAY/VALOR 2.png",
-            "3 DISEÑO FREE WAY/VALOR 3.png",
-            "3 DISEÑO FREE WAY/VALOR 4.png",
-            "3 DISEÑO FREE WAY/VALOR 5.png"
+            "3 DISENO FREE WAY/VALOR 1.png",
+            "3 DISENO FREE WAY/VALOR 2.png",
+            "3 DISENO FREE WAY/VALOR 3.png",
+            "3 DISENO FREE WAY/VALOR 4.png",
+            "3 DISENO FREE WAY/VALOR 5.png"
         ]
     }
 ];
