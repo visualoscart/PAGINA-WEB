@@ -498,56 +498,83 @@
         </div>
     </footer>
     <!-- Mega Modal Filosofía y Equipo -->
-    <div class="service-modal" id="company-modal">
+    <div class="service-modal team-modal-immersive" id="company-modal">
         <button class="modal-close">&times;</button>
-        <div class="modal-content mega-modal-content">
+
+        <!-- Fondo de órbitas moradas (estilo portafolio) -->
+        <div class="team-orbits-bg">
+            <div class="team-orbit t-orbit-1"></div>
+            <div class="team-orbit t-orbit-2"></div>
+            <div class="team-orbit t-orbit-3"></div>
+        </div>
+
+        <!-- Esferas flotantes desenfocadas -->
+        <div class="team-spheres">
+            <div class="t-sphere ts-1"></div>
+            <div class="t-sphere ts-2"></div>
+            <div class="t-sphere ts-3"></div>
+            <div class="t-sphere ts-4"></div>
+        </div>
+
+        <div class="modal-content team-immersive-content">
             
-            <!-- Fila Superior: Misión (Izquierda) y Visión (Derecha) -->
-            <div class="philosophy-block">
-                <h4 class="philosophy-title">Misión</h4>
-                <p>Proporcionar <span class="highlight">soluciones creativas</span> de gestión de redes sociales, diseño gráfico y animación que ayuden a nuestros clientes a comunicar su visión de manera eficaz.</p>
-                <p>Nos comprometemos a entregar productos de alta calidad que no solo satisfagan, sino que también superen las expectativas y contribuyan al <span class="highlight">éxito excepcional</span> de nuestros clientes.</p>
-            </div>
-            
-            <div class="philosophy-block">
-                <h4 class="philosophy-title">Visión</h4>
-                <p>Consolidarnos como <span class="highlight">líderes en el sector</span> de diseño gráfico y animación digital, distinguidos por nuestra capacidad de innovar y adaptarnos a las cambiantes demandas del mercado.</p>
-                <p>Nos esforzamos por ser un referente de creatividad, empoderando a nuestros clientes para que logren una comunicación visual <span class="highlight">impactante y efectiva</span>.</p>
+            <!-- Título Principal -->
+            <div class="team-header-title">
+                <h2 class="section-title">Nuestra <span class="highlight">Esencia</span></h2>
+                <p>Descubre los pilares que impulsan nuestra creatividad</p>
             </div>
 
-            <!-- Fila Inferior: Valores (Izquierda) y Baraja (Derecha) -->
-            <div class="values-block">
-                <h4 class="values-title">Nuestros Valores</h4>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--accent-secondary)" style="margin-bottom: 1rem;">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            <!-- Contenedor de Tarjetas Flotantes (Misión, Visión, Valores) -->
+            <div class="floating-cards-container">
+                <!-- Misión -->
+                <div class="philosophy-floating-card p-card-mision">
+                    <div class="card-glow"></div>
+                    <div class="philosophy-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <h5>Excelencia</h5>
-                        <p>Comprometidos con mantener altos estándares de calidad.</p>
                     </div>
-                    <div class="value-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--accent-secondary)" style="margin-bottom: 1rem;">
-                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 4 3 4zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 4 3 4zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    <h4 class="philosophy-title">Misión</h4>
+                    <p>Proporcionar <span class="highlight">soluciones creativas</span> de gestión de redes sociales, diseño gráfico y animación que ayuden a nuestros clientes a comunicar su visión de manera eficaz.</p>
+                </div>
+
+                <!-- Visión -->
+                <div class="philosophy-floating-card p-card-vision">
+                    <div class="card-glow"></div>
+                    <div class="philosophy-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <h5>Colaboración</h5>
-                        <p>Valoramos el trabajo conjunto y la co-creación con clientes.</p>
                     </div>
-                    <div class="value-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--accent-secondary)" style="margin-bottom: 1rem;">
-                            <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
-                        </svg>
-                        <h5>Innovación</h5>
-                        <p>Adoptamos nuevas y efectivas técnicas de diseño.</p>
+                    <h4 class="philosophy-title">Visión</h4>
+                    <p>Consolidarnos como <span class="highlight">líderes en el sector</span> distinguidos por nuestra capacidad de innovar y adaptarnos a las cambiantes demandas del mercado.</p>
+                </div>
+
+                <!-- Valores -->
+                <div class="philosophy-floating-card p-card-valores">
+                    <div class="card-glow"></div>
+                    <h4 class="philosophy-title" style="margin-bottom: 1.5rem;">Valores</h4>
+                    <div class="values-mini-grid">
+                        <div class="v-mini-item">
+                            <h5>Excelencia</h5>
+                        </div>
+                        <div class="v-mini-item">
+                            <h5>Colaboración</h5>
+                        </div>
+                        <div class="v-mini-item">
+                            <h5>Innovación</h5>
+                        </div>
                     </div>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">Comprometidos con mantener altos estándares de calidad y co-creación.</p>
                 </div>
             </div>
-            
-            <div class="modal-team-section">
-                <!-- Fondo oscurecido para la baraja activa -->
+
+            <!-- Sección Equipo -->
+            <div class="modal-team-section-immersive">
+                <h3 class="team-section-subtitle">El Equipo <span class="highlight">Creativo</span></h3>
                 <div class="deck-overlay"></div>
                 <div class="team-deck mega-deck">
-                    <!-- Órbita detrás de la tarjeta activa -->
                     <div class="card-active-orbit"></div>
                     <div class="team-card deck-card">
                         <div class="card-inner">
@@ -583,6 +610,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Modales Inmersivos de Servicios -->
     <div class="modals-overlay" id="modals-overlay"></div>

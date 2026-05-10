@@ -4,15 +4,15 @@ window.marcasData = [
         "name": "Fuku Arenal",
         "folderName": "1 DISENO FUKU ARENAL",
         "logoBtn": "1 DISENO FUKU ARENAL/LOGO.jpg",
-        "portada": "1 DISENO FUKU ARENAL/PORTADA.png",
+        "portada": "1 DISENO FUKU ARENAL/PORTADA.jpg",
         "video": "1 DISENO FUKU ARENAL/VIDEO.mp4",
         "concepto": "FUKU ARENAL es un alojamiento tipo Airbnb ubicado cerca del volcán Arenal, pensado para viajeros que desean escapar del ritmo acelerado de la ciudad y sumergirse en un entorno natural sin renunciar a la comodidad. Su propuesta se centra en ofrecer una experiencia eco-consciente y acogedora.",
         "mision": "Crear estancias memorables a través de detalles cuidados, hospitalidad auténtica y experiencias diseñadas para que cada huésped se sienta parte del destino.",
         "vision": "Ser el espacio donde cada viajero descubre una experiencia única que conecta con el lugar, la cultura y las emociones que quiere vivir.",
         "mockups": [
-            "1 DISENO FUKU ARENAL/MOCKUP 1.png",
+            "1 DISENO FUKU ARENAL/MOCKUP1.jpg",
             "1 DISENO FUKU ARENAL/MOCKUP 2.jpg",
-            "1 DISENO FUKU ARENAL/MOCKUP3.png"
+            "1 DISENO FUKU ARENAL/MOCKUP3.jpg"
         ],
         "fondos": [
             "1 DISENO FUKU ARENAL/FONDO 1.jpg",
@@ -37,8 +37,8 @@ window.marcasData = [
         "id": "2 DISENO RAVEN HOUSE",
         "name": "Raven House",
         "folderName": "2 DISENO RAVEN HOUSE",
-        "logoBtn": "2 DISENO RAVEN HOUSE/LOGO.png",
-        "portada": "2 DISENO RAVEN HOUSE/PORTADA.png",
+        "logoBtn": "2 DISENO RAVEN HOUSE/LOGO.jpg",
+        "portada": "2 DISENO RAVEN HOUSE/PORTADA.jpg",
         "video": "2 DISENO RAVEN HOUSE/VIDEO.mp4",
         "concepto": "Raven Store es un espacio donde la magia y el estilo se fusionan, ofreciendo un ambiente elegante, moderno y lleno de dinamismo. Este negocio familiar se especializa en trading card games, sublimación y figuras coleccionables.",
         "mision": "Crear un espacio donde la comunidad amante del coleccionismo y los juegos de estrategia encuentre productos únicos, atención cercana y soluciones rápidas, combinando elegancia, modernidad y un servicio comprometido que siempre va más allá.",
@@ -49,10 +49,10 @@ window.marcasData = [
             "2 DISENO RAVEN HOUSE/MOCKUP 3.jpg"
         ],
         "fondos": [
-            "2 DISENO RAVEN HOUSE/FONDO 1.png",
-            "2 DISENO RAVEN HOUSE/FONDO 2.png",
-            "2 DISENO RAVEN HOUSE/FONDO 3.png",
-            "2 DISENO RAVEN HOUSE/FONDO 4.png"
+            "2 DISENO RAVEN HOUSE/FONDO 1.jpg",
+            "2 DISENO RAVEN HOUSE/FONDO 2.jpg",
+            "2 DISENO RAVEN HOUSE/FONDO 3.jpg",
+            "2 DISENO RAVEN HOUSE/FONDO 4.jpg"
         ],
         "versiones": [
             "2 DISENO RAVEN HOUSE/VERSION 1.png",
@@ -60,33 +60,33 @@ window.marcasData = [
             "2 DISENO RAVEN HOUSE/VERSION 3.png"
         ],
         "valores": [
-            "2 DISENO RAVEN HOUSE/VALOR 1.png",
-            "2 DISENO RAVEN HOUSE/VALOR 2.png",
-            "2 DISENO RAVEN HOUSE/VALOR 3.png",
-            "2 DISENO RAVEN HOUSE/VALOR 4.png",
-            "2 DISENO RAVEN HOUSE/VALOR 5.png"
+            "2 DISENO RAVEN HOUSE/VALOR 1.jpg",
+            "2 DISENO RAVEN HOUSE/VALOR 2.jpg",
+            "2 DISENO RAVEN HOUSE/VALOR 3.jpg",
+            "2 DISENO RAVEN HOUSE/VALOR 4.jpg",
+            "2 DISENO RAVEN HOUSE/VALOR 5.jpg"
         ]
     },
     {
         "id": "3 DISENO FREE WAY",
         "name": "Free Way",
         "folderName": "3 DISENO FREE WAY",
-        "logoBtn": "3 DISENO FREE WAY/LOGO.png",
-        "portada": "3 DISENO FREE WAY/PORTADA.png",
+        "logoBtn": "3 DISENO FREE WAY/LOGO.jpg",
+        "portada": "3 DISENO FREE WAY/PORTADA.jpg",
         "video": "3 DISENO FREE WAY/VIDEO.mp4",
         "concepto": "Free Way es una empresa de alquiler de vehículos especializada en el segmento turístico, dedicada a ofrecer soluciones de movilidad que elevan la forma en que los viajeros descubren Costa Rica.",
         "mision": "Brindar experiencias de movilidad que permitan a cada viajero descubrir Costa Rica con libertad, seguridad y un servicio profundamente humano. En Free Way nos comprometemos a ofrecer atención personalizada, procesos simples y vehículos confiables que conviertan cada recorrido en una aventura memorable.",
         "vision": "Ser la empresa de alquiler de vehículos más confiable y apreciada del segmento turístico, reconocida por elevar la experiencia de viaje a través de un servicio cercano, profesional y orientado a la excelencia, acompañando a cada cliente en la creación de rutas, historias y momentos inolvidables.",
         "mockups": [
-            "3 DISENO FREE WAY/MOCKUP 1.png",
-            "3 DISENO FREE WAY/MOCKUP 2.png",
-            "3 DISENO FREE WAY/MOCKUP 3.png"
+            "3 DISENO FREE WAY/MOCKUP 1.jpg",
+            "3 DISENO FREE WAY/MOCKUP 2.jpg",
+            "3 DISENO FREE WAY/MOCKUP 3.jpg"
         ],
         "fondos": [
-            "3 DISENO FREE WAY/FONDO 1.png",
-            "3 DISENO FREE WAY/FONDO 2.png",
-            "3 DISENO FREE WAY/FONDO 3.png",
-            "3 DISENO FREE WAY/FONDO 4.png"
+            "3 DISENO FREE WAY/FONDO 1.jpg",
+            "3 DISENO FREE WAY/FONDO 2.jpg",
+            "3 DISENO FREE WAY/FONDO 3.jpg",
+            "3 DISENO FREE WAY/FONDO 4.jpg"
         ],
         "versiones": [
             "3 DISENO FREE WAY/VERSION 1.png",
@@ -94,11 +94,11 @@ window.marcasData = [
             "3 DISENO FREE WAY/VERSION 3.png"
         ],
         "valores": [
-            "3 DISENO FREE WAY/VALOR 1.png",
-            "3 DISENO FREE WAY/VALOR 2.png",
-            "3 DISENO FREE WAY/VALOR 3.png",
-            "3 DISENO FREE WAY/VALOR 4.png",
-            "3 DISENO FREE WAY/VALOR 5.png"
+            "3 DISENO FREE WAY/VALOR 1.jpg",
+            "3 DISENO FREE WAY/VALOR 2.jpg",
+            "3 DISENO FREE WAY/VALOR 3.jpg",
+            "3 DISENO FREE WAY/VALOR 4.jpg",
+            "3 DISENO FREE WAY/VALOR 5.jpg"
         ]
     }
 ];
@@ -185,8 +185,8 @@ window.animacionData = [
         "id": "1 ANIMACION OLIMPO",
         "name": "Olimpo",
         "folderName": "1 ANIMACION OLIMPO",
-        "logoBtn": "1 ANIMACION OLIMPO/LOGO.png", 
-        "portada": "1 ANIMACION OLIMPO/PORTADA.png", 
+        "logoBtn": "1 ANIMACION OLIMPO/LOGO.jpg", 
+        "portada": "1 ANIMACION OLIMPO/PORTADA.jpg", 
         "video": "1 ANIMACION OLIMPO/VIDEO.mp4",
         "youtubeLink": "https://player.vimeo.com/video/1180187465?autoplay=1&muted=1",
         "icons": [
@@ -198,25 +198,25 @@ window.animacionData = [
         ],
         "concepto": "Inspirado en la riqueza simbólica del arte y la mitología griega, desarrollé una pieza audiovisual creada desde cero para un festival de arte, donde la animación digital y la composición en video dan vida a escenas que acompañan y elevan la presentación de un equipo de baile. Cada movimiento, cada textura y cada luz reinterpretan la herencia clásica en un lenguaje contemporáneo que dialoga con la fuerza y la expresividad de la danza.",
         "inspoImages": [
-            "1 ANIMACION OLIMPO/INSPO 1.PNG",
-            "1 ANIMACION OLIMPO/INSPO 2.PNG",
-            "1 ANIMACION OLIMPO/INSPO 3.PNG",
-            "1 ANIMACION OLIMPO/INSPO 4.PNG",
-            "1 ANIMACION OLIMPO/INSPO 5.PNG",
-            "1 ANIMACION OLIMPO/INSPO 6.PNG",
-            "1 ANIMACION OLIMPO/INSPO 7.PNG",
-            "1 ANIMACION OLIMPO/INSPO  8.PNG",
-            "1 ANIMACION OLIMPO/INSPO 9.PNG",
-            "1 ANIMACION OLIMPO/INSPO 10.PNG.png",
-            "1 ANIMACION OLIMPO/INSPO 11.PNG.png",
-            "1 ANIMACION OLIMPO/INSPO 12.PNG.png",
-            "1 ANIMACION OLIMPO/INSPO 13.PNG.png",
-            "1 ANIMACION OLIMPO/INSPO 14.PNG.png",
-            "1 ANIMACION OLIMPO/INSPO 15.PNG.png"
+            "1 ANIMACION OLIMPO/INSPO  1.jpg",
+            "1 ANIMACION OLIMPO/INSPO  2.jpg",
+            "1 ANIMACION OLIMPO/INSPO  3.jpg",
+            "1 ANIMACION OLIMPO/INSPO  4.jpg",
+            "1 ANIMACION OLIMPO/INSPO  5.jpg",
+            "1 ANIMACION OLIMPO/INSPO  6.jpg",
+            "1 ANIMACION OLIMPO/INSPO  7.jpg",
+            "1 ANIMACION OLIMPO/INSPO  8.jpg",
+            "1 ANIMACION OLIMPO/INSPO  9.jpg",
+            "1 ANIMACION OLIMPO/INSPO  10.jpg",
+            "1 ANIMACION OLIMPO/INSPO  11.jpg",
+            "1 ANIMACION OLIMPO/INSPO  12.jpg",
+            "1 ANIMACION OLIMPO/INSPO  13.jpg",
+            "1 ANIMACION OLIMPO/INSPO  14.jpg",
+            "1 ANIMACION OLIMPO/15.jpg"
         ],
         "videoProceso": "1 ANIMACION OLIMPO/VIDEO PROCESO.mp4",
         "videoRenders": "1 ANIMACION OLIMPO/VIDEO RENDERS.mp4",
-        "foto1": "1 ANIMACION OLIMPO/FOTO 1.png",
-        "foto2": "1 ANIMACION OLIMPO/FOTO 2.png"
+        "foto1": "1 ANIMACION OLIMPO/FOTO 1.jpg",
+        "foto2": "1 ANIMACION OLIMPO/FOTO 2.jpg"
     }
 ];

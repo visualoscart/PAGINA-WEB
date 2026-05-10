@@ -357,8 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
             companyModal.classList.add('active');
             modalsOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
-
-            // Reset deck en caso de que hubieran seleccionado una carta antes
+            
             const teamCards = companyModal.querySelectorAll('.team-card');
             const teamDeck = companyModal.querySelector('.team-deck');
             teamCards.forEach(c => c.classList.remove('active'));
@@ -380,6 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'hidden';
         });
     }
+
 
     // Parallax para tarjetas laterales del modal portafolio
     const parallaxCards = document.querySelectorAll('.parallax-card');
@@ -407,6 +407,46 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Parallax para el modal del equipo (nuevo)
+    const teamImmersiveModal = document.getElementById('company-modal');
+    const teamFloatingCards = document.querySelectorAll('.philosophy-floating-card');
+    const teamOrbits = document.querySelectorAll('.team-orbit');
+
+    if (teamImmersiveModal) {
+        teamImmersiveModal.addEventListener('mousemove', (e) => {
+            const rect = teamImmersiveModal.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const moveX = (x - centerX) * 0.015;
+            const moveY = (y - centerY) * 0.015;
+
+            // Mover tarjetas
+            teamFloatingCards.forEach((card, index) => {
+                const factor = (index + 1) * 0.6;
+                card.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px)`;
+            });
+
+            // Mover órbitas (más sutil)
+            teamOrbits.forEach((orbit, index) => {
+                const factor = (index + 1) * 0.3;
+                orbit.style.marginLeft = `${moveX * factor}px`;
+                orbit.style.marginTop = `${moveY * factor}px`;
+            });
+        });
+
+        teamImmersiveModal.addEventListener('mouseleave', () => {
+            teamFloatingCards.forEach(card => card.style.transform = '');
+            teamOrbits.forEach(orbit => {
+                orbit.style.marginLeft = '';
+                orbit.style.marginTop = '';
+            });
+        });
+    }
+
 
     // Botones de categorías del portafolio
     const portfolioCatBtns = document.querySelectorAll('.portfolio-cat-btn');
