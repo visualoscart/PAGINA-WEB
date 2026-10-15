@@ -130,7 +130,7 @@ const PORTFOLIO_DATA = [
     title: "Speedy Logistics - Gestión Integral de Redes",
     category: "redes-sociales",
     categoryName: "Gestión de Redes",
-    image: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/PORTADA.png",
+    image: "1 GESTION SPEEDY LOGISTICS/PORTADA.png",
     client: "Speedy Logistics",
     location: "Costa Rica / EE. UU.",
     summary: "Empresa de Courier & Logística Internacional",
@@ -142,7 +142,7 @@ const PORTFOLIO_DATA = [
     title: "Psicosinapsis - Estrategia & Presencia Digital",
     category: "redes-sociales",
     categoryName: "Gestión de Redes",
-    image: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/PORTADA.png",
+    image: "2 GESTION PSICOSINAPSIS/PORTADA.png",
     client: "Psicosinapsis",
     location: "Costa Rica",
     summary: "Consultoría Psicológica Multidisciplinaria",
@@ -156,7 +156,7 @@ const PORTFOLIO_DATA = [
     title: "Fuku Arenal - Branding & Experiencia Eco-Consciente",
     category: "diseno-marca",
     categoryName: "Diseño de Marca",
-    image: "PORTAFOLIO/1 DISENO FUKU ARENAL/PORTADA.jpg",
+    image: "1 DISENO FUKU ARENAL/PORTADA.jpg",
     client: "Fuku Arenal",
     location: "Arenal, Costa Rica",
     summary: "Identidad visual y branding para alojamiento eco-consciente",
@@ -168,7 +168,7 @@ const PORTFOLIO_DATA = [
     title: "Raven Store - Identidad Visual & Branding Coleccionable",
     category: "diseno-marca",
     categoryName: "Diseño de Marca",
-    image: "PORTAFOLIO/2 DISENO RAVEN HOUSE/PORTADA.jpg",
+    image: "2 DISENO RAVEN HOUSE/PORTADA.jpg",
     client: "Raven Store",
     location: "Costa Rica",
     summary: "Diseño de marca elegante y dinámico para tienda de coleccionismo",
@@ -180,7 +180,7 @@ const PORTFOLIO_DATA = [
     title: "Free Way - Movilidad Turística & Identidad de Flota",
     category: "diseno-marca",
     categoryName: "Diseño de Marca",
-    image: "PORTAFOLIO/3 DISENO FREE WAY/PORTADA.jpg",
+    image: "3 DISENO FREE WAY/PORTADA.jpg",
     client: "Free Way",
     location: "Costa Rica",
     summary: "Branding estratégico para empresa de alquiler de vehículos turísticos",
@@ -967,29 +967,29 @@ const GESTION_REDES_PORTFOLIO = [
   {
     id: "speedy-logistics",
     caseStudyId: "speedy-logistics",
-    folder: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS",
+    folder: "1 GESTION SPEEDY LOGISTICS",
     brandName: "Speedy Logistics",
     niche: "Empresa de Courier & Logística Internacional",
-    logo: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/PERFIL.png",
-    portada: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/PORTADA.png",
-    heroVideo: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/VIDEO.mp4",
-    videoHero: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/VIDEO.mp4",
+    logo: "1 GESTION SPEEDY LOGISTICS/PERFIL.png",
+    portada: "1 GESTION SPEEDY LOGISTICS/PORTADA.png",
+    heroVideo: "1 GESTION SPEEDY LOGISTICS/VIDEO.mp4",
+    videoHero: "1 GESTION SPEEDY LOGISTICS/VIDEO.mp4",
     conceptTitle: "CONCEPTO DE MARCA",
     conceptText: "Speedy Logistics es una empresa especializada en la gestión y transporte de compras internacionales desde Estados Unidos hacia Costa Rica, comprometida con ofrecer un servicio eficiente, seguro y transparente. La operación se orienta a facilitar el acceso a productos adquiridos en comercios estadounidenses, garantizando una experiencia logística confiable, ágil y enfocada en las necesidades del cliente.",
     conceptDesc: "Speedy Logistics es una empresa especializada en la gestión y transporte de compras internacionales desde Estados Unidos hacia Costa Rica, comprometida con ofrecer un servicio eficiente, seguro y transparente.",
     posts: [
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 1.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 2.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 3.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 4.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 5.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 6.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/POST 7.png"
+      "1 GESTION SPEEDY LOGISTICS/POST 1.png",
+      "1 GESTION SPEEDY LOGISTICS/POST 2.png",
+      "1 GESTION SPEEDY LOGISTICS/POST 3.png",
+      "1 GESTION SPEEDY LOGISTICS/POST 4.png",
+      "1 GESTION SPEEDY LOGISTICS/POST 5.png",
+      "1 GESTION SPEEDY LOGISTICS/POST 6.png",
+      "1 GESTION SPEEDY LOGISTICS/POST 7.png"
     ],
     animations: [
-      { src: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/ANIMACION 1.mp4", title: "Spot Promocional 4:5" },
-      { src: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/ANIMACION 2.mp4", title: "Reel Estratégico 4:5" },
-      { src: "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/ANIMACION 3.mp4", title: "Contenido Dinámico 4:5" }
+      { src: "1 GESTION SPEEDY LOGISTICS/ANIMACION 1.mp4", title: "Spot Promocional 4:5" },
+      { src: "1 GESTION SPEEDY LOGISTICS/ANIMACION 2.mp4", title: "Reel Estratégico 4:5" },
+      { src: "1 GESTION SPEEDY LOGISTICS/ANIMACION 3.mp4", title: "Contenido Dinámico 4:5" }
     ],
     campaignsCount: "+24 Campañas Realizadas",
     metricsBanner: {
@@ -1004,9 +1004,9 @@ const GESTION_REDES_PORTFOLIO = [
     },
     socialNetworks: ["instagram", "facebook", "tiktok", "youtube"],
     mockups: [
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/MOCKUP 1.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/MOCKUP 2.png",
-      "PORTAFOLIO/1 GESTION SPEEDY LOGISTICS/MOCKUP 3.png"
+      "1 GESTION SPEEDY LOGISTICS/MOCKUP 1.png",
+      "1 GESTION SPEEDY LOGISTICS/MOCKUP 2.png",
+      "1 GESTION SPEEDY LOGISTICS/MOCKUP 3.png"
     ],
     instagramLinks: [
       { url: "https://www.instagram.com/p/DWWfY3ECSYq/", title: "Ver Publicación #1 en Instagram" },
@@ -1018,29 +1018,29 @@ const GESTION_REDES_PORTFOLIO = [
   {
     id: "psicosinapsis",
     caseStudyId: "psicosinapsis",
-    folder: "PORTAFOLIO/2 GESTION PSICOSINAPSIS",
+    folder: "2 GESTION PSICOSINAPSIS",
     brandName: "Psicosinapsis",
     niche: "Consultoría Psicológica Multidisciplinaria",
-    logo: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/PERFIL.png",
-    portada: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/PORTADA.png",
-    heroVideo: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/VIDEO.mp4",
-    videoHero: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/VIDEO.mp4",
+    logo: "2 GESTION PSICOSINAPSIS/PERFIL.png",
+    portada: "2 GESTION PSICOSINAPSIS/PORTADA.png",
+    heroVideo: "2 GESTION PSICOSINAPSIS/VIDEO.mp4",
+    videoHero: "2 GESTION PSICOSINAPSIS/VIDEO.mp4",
     conceptTitle: "CONCEPTO DE MARCA",
     conceptText: "Psicosinapsis es una consultoría psicológica multidisciplinaria que integra los enfoques clínico, educativo y organizacional desde una perspectiva conductual, ética y empática. Su propósito es fomentar el bienestar emocional, cognitivo y social mediante la modificación de conductas, el desarrollo de habilidades psicosociales y el fortalecimiento de ambientes saludables y funcionales.",
     conceptDesc: "Psicosinapsis es una consultoría psicológica multidisciplinaria que integra los enfoques clínico, educativo y organizacional desde una perspectiva conductual, ética y empática.",
     posts: [
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 1.png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 2.png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 3.png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 4.png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 5.jpg",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 6.png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/POST 7.png"
+      "2 GESTION PSICOSINAPSIS/POST 1.png",
+      "2 GESTION PSICOSINAPSIS/POST 2.png",
+      "2 GESTION PSICOSINAPSIS/POST 3.png",
+      "2 GESTION PSICOSINAPSIS/POST 4.png",
+      "2 GESTION PSICOSINAPSIS/POST 5.jpg",
+      "2 GESTION PSICOSINAPSIS/POST 6.png",
+      "2 GESTION PSICOSINAPSIS/POST 7.png"
     ],
     animations: [
-      { src: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/ANIMACION 1.mp4", title: "Spot Promocional 4:5" },
-      { src: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/ANIMACION 2.mp4", title: "Reel Estratégico 4:5" },
-      { src: "PORTAFOLIO/2 GESTION PSICOSINAPSIS/ANIMACION 3.mp4", title: "Contenido Dinámico 4:5" }
+      { src: "2 GESTION PSICOSINAPSIS/ANIMACION 1.mp4", title: "Spot Promocional 4:5" },
+      { src: "2 GESTION PSICOSINAPSIS/ANIMACION 2.mp4", title: "Reel Estratégico 4:5" },
+      { src: "2 GESTION PSICOSINAPSIS/ANIMACION 3.mp4", title: "Contenido Dinámico 4:5" }
     ],
     campaignsCount: "+36 Campañas Realizadas",
     metricsBanner: {
@@ -1055,9 +1055,9 @@ const GESTION_REDES_PORTFOLIO = [
     },
     socialNetworks: ["instagram", "facebook", "tiktok", "youtube"],
     mockups: [
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/MOCKUP 1 .png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/MOCKUP 2.png",
-      "PORTAFOLIO/2 GESTION PSICOSINAPSIS/MOCKUP 3 .png"
+      "2 GESTION PSICOSINAPSIS/MOCKUP 1 .png",
+      "2 GESTION PSICOSINAPSIS/MOCKUP 2.png",
+      "2 GESTION PSICOSINAPSIS/MOCKUP 3 .png"
     ],
     instagramLinks: [
       { url: "https://www.instagram.com/p/DPm0Rm3gMqS/", title: "Ver Publicación #1 en Instagram" },
@@ -1075,139 +1075,139 @@ const DISENO_MARCA_PORTFOLIO = [
   {
     id: "fuku-arenal",
     caseStudyId: "fuku-arenal",
-    folder: "PORTAFOLIO/1 DISENO FUKU ARENAL",
+    folder: "1 DISENO FUKU ARENAL",
     brandName: "Fuku Arenal",
     niche: "Alojamiento Turístico & Experiencia Eco-Consciente",
-    logo: "PORTAFOLIO/1 DISENO FUKU ARENAL/LOGO.jpg",
-    portada: "PORTAFOLIO/1 DISENO FUKU ARENAL/PORTADA.jpg",
-    video: "PORTAFOLIO/1 DISENO FUKU ARENAL/VIDEO.mp4",
+    logo: "1 DISENO FUKU ARENAL/LOGO.jpg",
+    portada: "1 DISENO FUKU ARENAL/PORTADA.jpg",
+    video: "1 DISENO FUKU ARENAL/VIDEO.mp4",
     conceptTitle: "CONCEPTO DE LA MARCA",
     conceptText: "FUKU ARENAL es un alojamiento tipo Airbnb ubicado cerca del volcán Arenal, pensado para viajeros que desean escapar del ritmo acelerado de la ciudad y sumergirse en un entorno natural sin renunciar a la comodidad. Su propuesta se centra en ofrecer una experiencia eco-consciente y acogedora.",
     misionText: "Crear estancias memorables a través de detalles cuidados, hospitalidad auténtica y experiencias diseñadas para que cada huésped se sienta parte del destino.",
     visionText: "Ser el espacio donde cada viajero descubre una experiencia única que conecta con el lugar, la cultura y las emociones que quiere vivir.",
     mockups: [
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/MOCKUP1.jpg",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/MOCKUP 2.jpg",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/MOCKUP3.jpg"
+      "1 DISENO FUKU ARENAL/MOCKUP1.jpg",
+      "1 DISENO FUKU ARENAL/MOCKUP 2.jpg",
+      "1 DISENO FUKU ARENAL/MOCKUP3.jpg"
     ],
     fondos: [
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/FONDO 1.jpg",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/FONDO 2.jpg",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/FONDO 3.jpg",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/FONDO 4.jpg"
+      "1 DISENO FUKU ARENAL/FONDO 1.jpg",
+      "1 DISENO FUKU ARENAL/FONDO 2.jpg",
+      "1 DISENO FUKU ARENAL/FONDO 3.jpg",
+      "1 DISENO FUKU ARENAL/FONDO 4.jpg"
     ],
     versiones: [
       {
-        image: "PORTAFOLIO/1 DISENO FUKU ARENAL/VERSION 1.png",
+        image: "1 DISENO FUKU ARENAL/VERSION 1.png",
         text: "Este es el formato principal que se utilizará de forma institucional. Para representar la marca de manera corporativa."
       },
       {
-        image: "PORTAFOLIO/1 DISENO FUKU ARENAL/VERSION 2.png",
+        image: "1 DISENO FUKU ARENAL/VERSION 2.png",
         text: "Se puede desarrollar un isotipo con el ícono del volcán para ser usado en espacios reducidos (stickers, redes, favicon)."
       },
       {
-        image: "PORTAFOLIO/1 DISENO FUKU ARENAL/VERSION 3.png",
+        image: "1 DISENO FUKU ARENAL/VERSION 3.png",
         text: "Un formato más adaptable para banners y publicidad exterior, donde se puede colocar el ícono junto al nombre en una distribución equilibrada."
       }
     ],
     valores: [
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/VALOR 1.png",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/VALOR 2.png",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/VALOR 3.png",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/VALOR 4.png",
-      "PORTAFOLIO/1 DISENO FUKU ARENAL/VALOR 5.png"
+      "1 DISENO FUKU ARENAL/VALOR 1.png",
+      "1 DISENO FUKU ARENAL/VALOR 2.png",
+      "1 DISENO FUKU ARENAL/VALOR 3.png",
+      "1 DISENO FUKU ARENAL/VALOR 4.png",
+      "1 DISENO FUKU ARENAL/VALOR 5.png"
     ]
   },
   {
     id: "raven-house",
     caseStudyId: "raven-house",
-    folder: "PORTAFOLIO/2 DISENO RAVEN HOUSE",
+    folder: "2 DISENO RAVEN HOUSE",
     brandName: "Raven Store",
     niche: "Coleccionismo, Trading Card Games & Sublimación",
-    logo: "PORTAFOLIO/2 DISENO RAVEN HOUSE/LOGO.jpg",
-    portada: "PORTAFOLIO/2 DISENO RAVEN HOUSE/PORTADA.jpg",
-    video: "PORTAFOLIO/2 DISENO RAVEN HOUSE/VIDEO.mp4",
+    logo: "2 DISENO RAVEN HOUSE/LOGO.jpg",
+    portada: "2 DISENO RAVEN HOUSE/PORTADA.jpg",
+    video: "2 DISENO RAVEN HOUSE/VIDEO.mp4",
     conceptTitle: "CONCEPTO DE LA MARCA",
     conceptText: "Raven Store es un espacio donde la magia y el estilo se fusionan, ofreciendo un ambiente elegante, moderno y lleno de dinamismo. Este negocio familiar se especializa en trading card games, sublimación y figuras coleccionables.",
     misionText: "Crear un espacio donde la comunidad amante del coleccionismo y los juegos de estrategia encuentre productos únicos, atención cercana y soluciones rápidas, combinando elegancia, modernidad y un servicio comprometido que siempre va más allá.",
     visionText: "Convertirnos en la tienda de referencia para coleccionistas y jugadores en Costa Rica, reconocida por su estilo distintivo, su experiencia de compra personalizada y su capacidad de conseguir lo que cada cliente busca, fortaleciendo una comunidad apasionada y en crecimiento.",
     mockups: [
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/MOCKUP 1.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/MOCKUP 2.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/MOCKUP 3.jpg"
+      "2 DISENO RAVEN HOUSE/MOCKUP 1.jpg",
+      "2 DISENO RAVEN HOUSE/MOCKUP 2.jpg",
+      "2 DISENO RAVEN HOUSE/MOCKUP 3.jpg"
     ],
     fondos: [
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/FONDO 1.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/FONDO 2.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/FONDO 3.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/FONDO 4.jpg"
+      "2 DISENO RAVEN HOUSE/FONDO 1.jpg",
+      "2 DISENO RAVEN HOUSE/FONDO 2.jpg",
+      "2 DISENO RAVEN HOUSE/FONDO 3.jpg",
+      "2 DISENO RAVEN HOUSE/FONDO 4.jpg"
     ],
     versiones: [
       {
-        image: "PORTAFOLIO/2 DISENO RAVEN HOUSE/VERSION 1.png",
+        image: "2 DISENO RAVEN HOUSE/VERSION 1.png",
         text: "Este es el formato principal que se utilizará de forma institucional. Para representar la marca de manera corporativa."
       },
       {
-        image: "PORTAFOLIO/2 DISENO RAVEN HOUSE/VERSIOn 2.png",
+        image: "2 DISENO RAVEN HOUSE/VERSIOn 2.png",
         text: "Se puede desarrollar un isotipo con el ícono distintivo para ser usado en espacios reducidos (stickers, redes, favicon)."
       },
       {
-        image: "PORTAFOLIO/2 DISENO RAVEN HOUSE/VERSION 3.png",
+        image: "2 DISENO RAVEN HOUSE/VERSION 3.png",
         text: "Un formato más adaptable para banners y publicidad exterior, donde se puede colocar el ícono junto al nombre en una distribución equilibrada."
       }
     ],
     valores: [
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/VALOR 1.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/VALOR 2.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/VALOR 3.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/VALOR 4.jpg",
-      "PORTAFOLIO/2 DISENO RAVEN HOUSE/VALOR 5.jpg"
+      "2 DISENO RAVEN HOUSE/VALOR 1.jpg",
+      "2 DISENO RAVEN HOUSE/VALOR 2.jpg",
+      "2 DISENO RAVEN HOUSE/VALOR 3.jpg",
+      "2 DISENO RAVEN HOUSE/VALOR 4.jpg",
+      "2 DISENO RAVEN HOUSE/VALOR 5.jpg"
     ]
   },
   {
     id: "free-way",
     caseStudyId: "free-way",
-    folder: "PORTAFOLIO/3 DISENO FREE WAY",
+    folder: "3 DISENO FREE WAY",
     brandName: "Free Way",
     niche: "Alquiler de Vehículos & Movilidad Turística",
-    logo: "PORTAFOLIO/3 DISENO FREE WAY/LOGO.jpg",
-    portada: "PORTAFOLIO/3 DISENO FREE WAY/PORTADA.jpg",
-    video: "PORTAFOLIO/3 DISENO FREE WAY/VIDEO.mp4",
+    logo: "3 DISENO FREE WAY/LOGO.jpg",
+    portada: "3 DISENO FREE WAY/PORTADA.jpg",
+    video: "3 DISENO FREE WAY/VIDEO.mp4",
     conceptTitle: "CONCEPTO DE LA MARCA",
     conceptText: "Free Way es una empresa de alquiler de vehículos especializada en el segmento turístico, dedicada a ofrecer soluciones de movilidad que elevan la forma en que los viajeros descubren Costa Rica.",
     misionText: "Brindar experiencias de movilidad que permitan a cada viajero descubrir Costa Rica con libertad, seguridad y un servicio profundamente humano. En Free Way nos comprometemos a ofrecer atención personalizada, procesos simples y vehículos confiables que conviertan cada recorrido en una aventura memorable.",
     visionText: "Ser la empresa de alquiler de vehículos más confiable y apreciada del segmento turístico, reconocida por elevar la experiencia de viaje a través de un servicio cercano, profesional y orientado a la excelencia, acompañando a cada cliente en la creación de rutas, historias y momentos inolvidables.",
     mockups: [
-      "PORTAFOLIO/3 DISENO FREE WAY/MOCKUP 1.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/MOCKUP 2.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/MOCKUP 3.jpg"
+      "3 DISENO FREE WAY/MOCKUP 1.jpg",
+      "3 DISENO FREE WAY/MOCKUP 2.jpg",
+      "3 DISENO FREE WAY/MOCKUP 3.jpg"
     ],
     fondos: [
-      "PORTAFOLIO/3 DISENO FREE WAY/FONDO 1.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/FONDO 2.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/FONDO 3.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/FONDO 4.jpg"
+      "3 DISENO FREE WAY/FONDO 1.jpg",
+      "3 DISENO FREE WAY/FONDO 2.jpg",
+      "3 DISENO FREE WAY/FONDO 3.jpg",
+      "3 DISENO FREE WAY/FONDO 4.jpg"
     ],
     versiones: [
       {
-        image: "PORTAFOLIO/3 DISENO FREE WAY/VERSION 1.png",
+        image: "3 DISENO FREE WAY/VERSION 1.png",
         text: "Este es el formato principal que se utilizará de forma institucional. Para representar la marca de manera corporativa."
       },
       {
-        image: "PORTAFOLIO/3 DISENO FREE WAY/VERSION 2.png",
+        image: "3 DISENO FREE WAY/VERSION 2.png",
         text: "Se puede desarrollar un isotipo con el ícono de movilidad para ser usado en espacios reducidos (stickers, redes, favicon)."
       },
       {
-        image: "PORTAFOLIO/3 DISENO FREE WAY/VERSION 3.png",
+        image: "3 DISENO FREE WAY/VERSION 3.png",
         text: "Un formato más adaptable para banners y publicidad exterior, donde se puede colocar el ícono junto al nombre en una distribución equilibrada."
       }
     ],
     valores: [
-      "PORTAFOLIO/3 DISENO FREE WAY/VALOR 1.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/VALOR 2.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/VALOR 3.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/VALOR 4.jpg",
-      "PORTAFOLIO/3 DISENO FREE WAY/VALOR 5.jpg"
+      "3 DISENO FREE WAY/VALOR 1.jpg",
+      "3 DISENO FREE WAY/VALOR 2.jpg",
+      "3 DISENO FREE WAY/VALOR 3.jpg",
+      "3 DISENO FREE WAY/VALOR 4.jpg",
+      "3 DISENO FREE WAY/VALOR 5.jpg"
     ]
   }
 ];
