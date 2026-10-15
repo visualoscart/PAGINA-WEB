@@ -1,15 +1,6 @@
 {
-  "name": "web-vo",
+  "name": "visual-oscart",
   "version": "1.0.0",
   "private": true,
-  "description": "Visual Oscart - Sitio Web Oficial",
-  "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "echo 'Static site ready'",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^5.4.0"
-  }
+  "description": "Visual Oscart - Sitio Web Oficial"
 }
