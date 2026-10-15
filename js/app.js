@@ -360,7 +360,7 @@ let activeVirtualIndex = 4; // Empieza en el conjunto medio (Servicio 0: Redes S
 
 const SERVICE_IMAGES = {
   "redes-sociales": "LOGOS/LREDES.jpg",
-  "diseno-marca": "LOGOS/LDISEÑO.jpg",
+  "diseno-marca": "LOGOS/LDISENO.jpg",
   "animacion-digital": "LOGOS/LANIMACION.jpg",
   "produccion-audiovisual": "LOGOS/LGRAFICO.jpg"
 };
@@ -381,7 +381,7 @@ function renderServices() {
   ];
 
   track.innerHTML = infiniteData.map((serv, idx) => {
-    const imgSrc = SERVICE_IMAGES[serv.id] || "LOGOS/LDISEÑO.jpg";
+    const imgSrc = SERVICE_IMAGES[serv.id] || "LOGOS/LDISENO.jpg";
     const isActive = idx === activeVirtualIndex;
     return `
       <div class="service-carousel-item ${isActive ? 'active' : ''}"
