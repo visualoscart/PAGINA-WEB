@@ -238,10 +238,27 @@ function initRibbonRotators() {
 /* ==========================================================================
    2. Router & Section Navigation
    ========================================================================== */
+function getTargetSectionId() {
+  const hash = (window.location.hash || '').replace(/^#\/?/, '').trim();
+  if (hash) return hash;
+
+  const path = (window.location.pathname || '')
+    .replace(/^\/|\/$/g, '')
+    .replace(/\.html$/, '')
+    .trim();
+
+  const validSections = ['home', 'servicios', 'quienes-somos', 'blog', 'contacto'];
+  if (validSections.includes(path)) {
+    return path;
+  }
+
+  return 'home';
+}
+
 function initRouter() {
   const navigate = () => {
-    const hash = window.location.hash || '#home';
-    const targetSectionId = hash.substring(1);
+    const targetSectionId = getTargetSectionId();
+    const hash = '#' + targetSectionId;
 
     const sections = document.querySelectorAll('.page-section');
     let found = false;
@@ -262,7 +279,8 @@ function initRouter() {
     // Update nav links active class
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-      if (link.getAttribute('href') === hash) {
+      const linkHref = link.getAttribute('href');
+      if (linkHref === hash || linkHref === '/' + targetSectionId || (targetSectionId === 'home' && (linkHref === '/' || linkHref === '#home'))) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -272,7 +290,7 @@ function initRouter() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // Reproducir video de fondo del Blog al activarse
-    if (targetSectionId === 'blog' || hash === '#blog') {
+    if (targetSectionId === 'blog') {
       const blogVid = document.querySelector('.blog-sticky-video-el');
       if (blogVid) {
         blogVid.play().catch(() => {});
@@ -280,7 +298,7 @@ function initRouter() {
     }
 
     // Reproducir video de fondo de Contacto al activarse
-    if (targetSectionId === 'contacto' || hash === '#contacto') {
+    if (targetSectionId === 'contacto') {
       const contactoVid = document.querySelector('.contacto-bg-video');
       if (contactoVid) {
         contactoVid.play().catch(() => {});
@@ -288,7 +306,7 @@ function initRouter() {
     }
 
     // Recalcular posición del carrusel si la sección activa es servicios
-    if (targetSectionId === 'servicios' || hash === '#servicios') {
+    if (targetSectionId === 'servicios') {
       setTimeout(() => {
         if (typeof updateCarouselTrackScroll === 'function') {
           updateCarouselTrackScroll();
@@ -301,7 +319,26 @@ function initRouter() {
     if (navMenu) navMenu.classList.remove('open');
   };
 
+  // Delegated click listener for all links targeting internal sections
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const targetId = href.substring(1);
+      if (targetId) {
+        e.preventDefault();
+        if (window.location.hash !== '#' + targetId) {
+          window.location.hash = '#' + targetId;
+        } else {
+          navigate();
+        }
+      }
+    }
+  });
+
   window.addEventListener('hashchange', navigate);
+  window.addEventListener('popstate', navigate);
   navigate();
 }
 

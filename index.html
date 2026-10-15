@@ -836,7 +836,6 @@
           <!-- Dynamic Content rendered by JS -->
         </div>
 
-        </div>
       </div>
     </section>
 
@@ -1193,12 +1192,15 @@
 
   <!-- Scripts -->
   <script src="https://player.vimeo.com/api/player.js"></script>
-  <script src="js/content.js?v=114"></script>
-  <script src="js/app.js?v=114"></script>
+  <script src="js/content.js?v=115"></script>
+  <script src="js/app.js?v=115"></script>
 
-  <!-- Auto-Recarga Automática para Desarrollo -->
+  <!-- Auto-Recarga Automática para Desarrollo (solo en localhost) -->
   <script>
     (function() {
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        return;
+      }
       let lastMod = null;
       setInterval(function() {
         fetch(window.location.href, { cache: 'no-store', method: 'HEAD' })
