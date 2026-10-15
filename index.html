@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Visual Oscart | Agencia Creativa & Comunicación Visual en Costa Rica y LatAm</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Visual Oscart es una agencia creativa enfocada en potenciar marcas a través de soluciones integrales en comunicación visual y digital: Gestión de Redes Sociales, Diseño de Marca, Animación Digital y Producción Audiovisual en Costa Rica y Latinoamérica.">
+  <meta name="keywords" content="agencia creativa costa rica, diseño de marca latinoamerica, gestion de redes sociales san jose, motion graphics costa rica, produccion audiovisual spots publicitarios, branding latam, comunicación visual">
+  <meta name="author" content="Visual Oscart">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://visualoscart.com/">
+  <meta name="theme-color" content="#1e202d">
+
+  <!-- OpenGraph / Facebook SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://visualoscart.com/">
+  <meta property="og:title" content="Visual Oscart | Agencia Creativa & Comunicación Visual">
+  <meta property="og:description" content="Potenciamos marcas a través de soluciones integrales en comunicación visual y digital. Redes sociales, branding, motion graphics y producción audiovisual en Costa Rica y LatAm.">
+  <meta property="og:image" content="assets/showcase/branding.jpg">
+
+  <!-- Twitter Card SEO -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Visual Oscart | Agencia Creativa Costa Rica & LatAm">
+  <meta name="twitter:description" content="Potenciamos marcas con estrategia, diseño y creatividad. Conoce nuestras soluciones visuales integrales.">
+  <meta name="twitter:image" content="assets/showcase/branding.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css?v=113">
+
+  <!-- Estilos Directos para Tarjeta Intro y 4 Indicadores -->
+  <style id="home-indicator-direct-styles">
+    /* Sección Blog: Buscador a ancho completo (100%) y cuadradito, botón cuadradito */
+    .blog-search-container {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .blog-search-box {
+      border-radius: 14px !important;
+    }
+    .netflix-blog-btn {
+      border-radius: 12px !important;
+    }
+
+    /* Lector de Artículo de Blog: A pantalla completa sin fondo a los lados */
+    #blogArticleModal {
+      padding: 0 !important;
+      background: #171822 !important;
+    }
+    #blogArticleModal .modal-container {
+      max-width: 100vw !important;
+      width: 100% !important;
+      border-radius: 0 !important;
+      border: none !important;
+      background: #171822 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+    }
+    #blogArticleBody {
+      max-width: 900px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 70px 24px 100px 24px !important;
+    }
+
+    /* Badges de Fases: Cuadrados (border-radius: 8px) en vez de ovalados/cápsula */
+    .phase-number-badge,
+    .phase-tag-badge,
+    .service-hero-badge {
+      border-radius: 8px !important;
+    }
+
+    /* Intro de Servicios: Texto a ancho completo (100%) igual a las tarjetas */
+    .service-hero-desc {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    /* Fases de Servicios: Botón de procesos y Botón Ver Más morado ancho 100% completo */
+    .phase-ticker-wrapper {
+      width: 100% !important;
+    }
+    .phase-process-ticker-pill {
+      width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      border-radius: 14px !important;
+      padding: 14px 22px !important;
+    }
+    .phase-video-accordion-wrap {
+      width: 100% !important;
+    }
+    .phase-toggle-video-btn {
+      width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background: linear-gradient(135deg, #7C3AED, #6366F1) !important;
+      border: 1px solid rgba(158, 108, 255, 0.45) !important;
+      border-radius: 14px !important;
+      color: #FFFFFF !important;
+      padding: 14px 24px !important;
+      font-weight: 700 !important;
+      box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35) !important;
+    }
+
+    /* Carrusel de Servicios: Botón externo fuera de la tarjeta y con exactamente el mismo ancho */
+    .service-carousel-item {
+      flex: 0 0 350px !important;
+      width: 350px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    .service-carousel-card {
+      width: 100% !important;
+    }
+    .service-card-external-btn {
+      width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    /* Fases de Servicios: Una debajo de otra para ser más alargadas */
+    .service-phases-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 24px !important;
+      width: 100% !important;
+    }
+    .service-phase-card {
+      width: 100% !important;
+      padding: 32px 38px !important;
+    }
+    .phase-processes-list {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+      gap: 12px 24px !important;
+    }
+
+    /* Testimonios: Eliminar sombra inferior al hacer hover y mantener estética limpia */
+    .purple-testimonial-card,
+    .purple-testimonial-card:hover {
+      box-shadow: none !important;
+    }
+    .purple-testimonial-card:hover {
+      transform: translateY(-4px) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
+    }
+
+    /* Sección Publicaciones Destacadas: Subtítulo en Poppins, sin neón en tarjeta central y solo puntos en footer */
+    .posts-showcase-wrapper .section-subtitle {
+      font-family: 'Poppins', -apple-system, sans-serif !important;
+      font-weight: 400 !important;
+      font-size: 1.05rem !important;
+      color: #a3a8c3 !important;
+      letter-spacing: 0.01em !important;
+    }
+
+    .post-card-outer-wrap.pos-center .post-porta-card {
+      border: 2px solid var(--accent-secondary) !important;
+      box-shadow: none !important;
+      filter: none !important;
+    }
+
+    .post-card-outer-wrap.pos-center .post-external-footer {
+      border-color: rgba(255, 255, 255, 0.15) !important;
+      box-shadow: none !important;
+    }
+
+    .post-slide-counter {
+      display: none !important;
+    }
+    /* Tarjeta Presentación Home - Más delgada, frase en 1 sola línea, fondo exacto al color base */
+    .home-intro-split-wrapper {
+      display: block !important;
+      position: relative !important;
+      width: 100% !important;
+      background: #212333 !important; /* Color de base sólido de la tarjeta */
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      border-radius: 24px !important;
+      padding: 34px 48px !important; /* Tarjeta notablemente más delgada */
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 35px rgba(139, 92, 246, 0.12) !important;
+      transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+      overflow: hidden !important; /* Corta la animación que sobresale por lo grande */
+      z-index: 3 !important;
+      margin-bottom: 45px !important;
+    }
+
+    .home-intro-split-wrapper:hover {
+      border-color: rgba(139, 92, 246, 0.35) !important;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55), 0 0 45px rgba(139, 92, 246, 0.20) !important;
+    }
+
+    /* Animación 3D de fondo: fondo idéntico al color base mediante mix-blend-mode y máscara radial */
+    .home-intro-bg-anim-wrap {
+      position: absolute !important;
+      top: 50% !important;
+      right: 10px !important;
+      transform: translateY(-50%) !important;
+      width: 540px !important;
+      height: 540px !important;
+      pointer-events: none !important;
+      z-index: 1 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background: transparent !important;
+    }
+
+    .home-intro-bg-anim-video {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+      background: transparent !important;
+      mix-blend-mode: screen !important; /* Funde el fondo del video para que sea 100% idéntico al fondo base #212333 */
+      -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 75%) !important;
+      mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 75%) !important;
+      opacity: 0.38 !important;
+      filter: contrast(1.15) brightness(1.05) !important;
+      pointer-events: none !important;
+    }
+
+    /* Contenido de texto completo abarcando la tarjeta */
+    .home-intro-text-col {
+      position: relative !important;
+      z-index: 2 !important;
+      width: 100% !important;
+      max-width: 900px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+
+    .home-intro-text-col .home-intro-title {
+      width: 100% !important;
+      font-family: var(--font-title) !important;
+      font-weight: 900 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+      margin-bottom: 14px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      gap: 4px !important;
+    }
+
+    .home-intro-text-col .home-intro-title .title-line-1 {
+      font-size: clamp(1.15rem, 1.8vw, 1.5rem) !important;
+      color: #FFFFFF !important;
+      line-height: 1.25 !important;
+    }
+
+    /* Frase 'creatividad y estrategia' estrictamente en UNA sola línea */
+    .home-intro-text-col .home-intro-title .title-line-2 {
+      font-size: clamp(1.45rem, 2.7vw, 2.35rem) !important;
+      line-height: 1.2 !important;
+      display: block !important;
+      white-space: nowrap !important;
+    }
+
+    .home-intro-text-col .home-intro-desc {
+      font-size: clamp(0.92rem, 1.12vw, 1.02rem) !important;
+      color: #CBD5E1 !important;
+      line-height: 1.65 !important;
+      margin: 0 !important;
+      font-weight: 400 !important;
+      max-width: 820px !important;
+      text-align: left !important;
+    }
+
+    @media (max-width: 992px) {
+      .home-intro-split-wrapper {
+        padding: 30px 28px !important;
+        margin-bottom: 35px !important;
+      }
+      .home-intro-bg-anim-wrap {
+        width: 440px !important;
+        height: 440px !important;
+        right: -30px !important;
+        opacity: 0.28 !important;
+      }
+      .home-intro-text-col .home-intro-title .title-line-2 {
+        white-space: normal !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .home-intro-split-wrapper {
+        padding: 26px 20px !important;
+      }
+      .home-intro-bg-anim-wrap {
+        width: 320px !important;
+        height: 320px !important;
+        right: 50% !important;
+        transform: translate(50%, -50%) !important;
+        opacity: 0.20 !important;
+      }
+    }
+
+    .home-indicators-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 24px !important;
+      width: 100% !important;
+      margin-top: 36px !important;
+      perspective: 1200px !important;
+    }
+
+    /* Tarjeta 3D interactiva */
+    .home-indicator-card {
+      position: relative !important;
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      border-radius: 20px !important;
+      min-height: 275px !important;
+      cursor: pointer !important;
+      transform-style: preserve-3d !important;
+      transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1) !important;
+      will-change: transform !important;
+      box-shadow: none !important;
+    }
+
+    /* Giro de las tarjetas hacia la cara trasera (imagen) */
+    .home-indicator-card.is-flipped {
+      transform: rotateY(180deg) !important;
+    }
+
+    /* Caras Frontal y Trasera */
+    .home-indicator-front,
+    .home-indicator-back {
+      border-radius: 20px !important;
+      backface-visibility: hidden !important;
+      -webkit-backface-visibility: hidden !important;
+      overflow: hidden !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* Cara Frontal: Lisa, base sólida #212333 */
+    .home-indicator-front {
+      position: relative !important;
+      background: #212333 !important;
+      background-image: none !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      padding: 28px 22px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      transform: rotateY(0deg) !important;
+      z-index: 2 !important;
+      box-shadow: none !important;
+      transition: border-color 0.3s ease !important;
+    }
+
+    .home-indicator-front::before,
+    .home-indicator-front::after {
+      display: none !important;
+      background-image: none !important;
+      content: none !important;
+    }
+
+    .home-indicator-card:not(.is-flipped):hover .home-indicator-front {
+      border-color: rgba(255, 255, 255, 0.22) !important;
+    }
+
+    /* Cara Trasera: Foto Showcase */
+    .home-indicator-back {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      transform: rotateY(180deg) !important;
+      border: 1px solid rgba(255, 255, 255, 0.14) !important;
+      background: #171825 !important;
+      z-index: 1 !important;
+      box-shadow: none !important;
+    }
+
+    .home-indicator-back-img,
+    .home-indicator-back-video {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      display: block !important;
+    }
+
+    .home-indicator-back-overlay {
+      position: absolute !important;
+      inset: 0 !important;
+      background: linear-gradient(to top, rgba(14, 15, 26, 0.88) 0%, rgba(14, 15, 26, 0.25) 50%, transparent 100%) !important;
+      display: flex !important;
+      align-items: flex-end !important;
+      padding: 18px 16px !important;
+      pointer-events: none !important;
+    }
+
+    .home-indicator-back-tag {
+      font-family: var(--font-title) !important;
+      font-size: 0.82rem !important;
+      font-weight: 800 !important;
+      color: #ffffff !important;
+      letter-spacing: 0.04em !important;
+      text-transform: uppercase !important;
+      background: rgba(33, 35, 51, 0.88) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      padding: 6px 12px !important;
+      border-radius: 8px !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    /* Recuadro Naranja Rectangular estilo Cargador */
+    .home-indicator-badge {
+      position: relative !important;
+      z-index: 2 !important;
+      background: #171825 !important; /* Riel base oscuro del cargador */
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      border-radius: 12px !important; /* Rectangular limpio, abarca la tarjeta */
+      height: 58px !important;
+      padding: 0 20px !important;
+      display: flex !important;
+      width: 100% !important; /* Abarca toda la tarjeta horizontalmente */
+      align-items: center !important;
+      justify-content: flex-start !important;
+      margin-bottom: 22px !important;
+      box-shadow: none !important; /* CERO efecto neon */
+      filter: none !important;
+      overflow: hidden !important;
+    }
+
+    /* Barra de Carga Fluida (Naranja puro sólido sin degradado ni neon) */
+    .home-indicator-fill {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background: #ff601b !important; /* Naranja puro sólido */
+      transform-origin: left center !important;
+      transform: scaleX(0);
+      z-index: 1 !important;
+      pointer-events: none !important;
+      box-shadow: none !important;
+      filter: none !important;
+    }
+
+    .home-indicator-number {
+      position: relative !important;
+      z-index: 3 !important;
+      font-family: var(--font-title) !important;
+      font-size: 1.85rem !important;
+      font-weight: 900 !important;
+      color: #ffffff !important;
+      line-height: 1 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      letter-spacing: -0.02em !important;
+    }
+
+    .home-indicator-number .plus-sign {
+      color: #ffffff !important;
+      margin-left: 2px !important;
+      font-size: 1.4rem !important;
+    }
+
+    .home-indicator-title {
+      position: relative !important;
+      z-index: 2 !important;
+      font-family: var(--font-title) !important;
+      font-size: 1.25rem !important;
+      font-weight: 900 !important;
+      text-transform: uppercase !important;
+      color: #ffffff !important;
+      line-height: 1.25 !important;
+      margin-bottom: 12px !important;
+      letter-spacing: 0.01em !important;
+    }
+
+    .home-indicator-desc {
+      position: relative !important;
+      z-index: 2 !important;
+      font-size: 0.9rem !important;
+      color: rgba(255, 255, 255, 0.78) !important;
+      line-height: 1.55 !important;
+      font-weight: 400 !important;
+      margin: 0 !important;
+    }
+
+    @media (max-width: 1024px) {
+      .home-indicators-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    @media (max-width: 580px) {
+      .home-indicators-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .home-indicator-front {
+        padding: 24px 20px !important;
+      }
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Visual Oscart - Agencia Creativa",
+    "image": "https://visualoscart.com/LOGO%20VISUAL%20OSCART.png",
+    "@id": "https://visualoscart.com/#organization",
+    "url": "https://visualoscart.com/",
+    "telephone": "+50688888888",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "San José",
+      "addressLocality": "San José",
+      "addressRegion": "San José",
+      "postalCode": "10101",
+      "addressCountry": "CR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.9281,
+      "longitude": -84.0907
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://instagram.com/visualoscart",
+      "https://linkedin.com/company/visualoscart",
+      "https://facebook.com/visualoscart"
+    ],
+    "areaServed": ["Costa Rica", "Latinoamérica", "América Central"],
+    "knowsAbout": [
+      "Gestión de redes sociales",
+      "Diseño de marca e identidad visual",
+      "Animación digital y motion graphics",
+      "Producción audiovisual y spots publicitarios"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo-wrap" title="Visual Oscart - Inicio">
+        <img src="LOGO VISUAL OSCART.png" alt="Logo Visual Oscart Agencia Creativa" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contacto" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+          Cotizar Proyecto
+        </a>
+
+        <!-- Mobile Drawer Menu Toggle Button -->
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Router Container -->
+  <main>
+
+    <!-- SECTION 1: HOME (PURE CLEAN VIDEO COVER ONLY) -->
+    <section id="home" class="page-section active" style="padding-top: 0;">
+      
+      <!-- Pure Video Hero Cover Banner (Fixed Parallax Hero) -->
+      <div class="video-hero-container">
+        <video autoplay loop muted playsinline class="video-hero-bg">
+          <source src="PORTADA%20HOME.mp4" type="video/mp4">
+          Tu navegador no soporta reproducción de video HTML5.
+        </video>
+
+        <div class="scroll-indicator">
+          <span>DESCUBRE MÁS</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 13l5 5 5-5M12 6v12"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bloque Presentación & 4 Indicadores Estadísticos -->
+      <div class="home-intro-stats-wrapper" id="home-intro">
+        <!-- Fondo de Video Ambiental Contenido -->
+        <div class="home-intro-bg-video-container">
+          <video autoplay loop muted playsinline class="home-intro-bg-video-el">
+            <source src="Comp 2.mp4" type="video/mp4">
+          </video>
+          <div class="home-intro-bg-video-overlay"></div>
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+          
+          <!-- Bloque Presentación (Animación 3D Gigante de Fondo con Opacidad + Texto Completo) -->
+          <div class="home-intro-split-wrapper">
+            <!-- Animación 3D Gigante en el fondo, cortada por los bordes de la tarjeta -->
+            <div class="home-intro-bg-anim-wrap">
+              <video autoplay loop muted playsinline class="home-intro-bg-anim-video">
+                <source src="Comp 2.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <!-- Contenido de Texto Completo a la Tarjeta -->
+            <div class="home-intro-text-col">
+              <h2 class="home-intro-title">
+                <span class="title-line-1">¿Buscas potenciar tu marca con</span>
+                <span class="purple-title-accent title-line-2">creatividad y estrategia?</span>
+              </h2>
+              <p class="home-intro-desc">
+                En Visual Oscart transformamos ideas en experiencias visuales que conectan con tu audiencia. Nuestro enfoque integra diseño de marca, producción audiovisual, gestión de redes sociales y animación digital, creando soluciones completas que fortalecen la identidad de tu empresa y generan resultados reales.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 Indicadores Estadísticos Interactivos con Giro 3D -->
+          <div class="home-indicators-grid" id="homeIndicatorsGrid">
+            
+            <!-- Indicador 1: Proyectos Completados -->
+            <div class="home-indicator-card" data-card-index="0">
+              <div class="home-indicator-front">
+                <div class="home-indicator-badge">
+                  <div class="home-indicator-fill"></div>
+                  <span class="home-indicator-number" data-target="423">0<span class="plus-sign">+</span></span>
+                </div>
+                <h3 class="home-indicator-title">PROYECTOS COMPLETADOS</h3>
+                <p class="home-indicator-desc">
+                  Proyectos digitales entregados con éxito, desde identidades de marca hasta producciones audiovisuales y estrategias de alto impacto.
+                </p>
+              </div>
+              <div class="home-indicator-back">
+                <img src="assets/showcase/branding.jpg" alt="Proyectos Completados" class="home-indicator-back-img">
+                <div class="home-indicator-back-overlay">
+                  <span class="home-indicator-back-tag">Proyectos Realizados</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicador 2: Clientes Satisfechos -->
+            <div class="home-indicator-card" data-card-index="1">
+              <div class="home-indicator-front">
+                <div class="home-indicator-badge">
+                  <div class="home-indicator-fill"></div>
+                  <span class="home-indicator-number" data-target="50">0<span class="plus-sign">+</span></span>
+                </div>
+                <h3 class="home-indicator-title">CLIENTES SATISFECHOS</h3>
+                <p class="home-indicator-desc">
+                  Empresas y emprendedores que confían en nosotros para potenciar su presencia y conectar con sus audiencias objetivo.
+                </p>
+              </div>
+              <div class="home-indicator-back">
+                <img src="assets/showcase/audiovisual.jpg" alt="Clientes Satisfechos" class="home-indicator-back-img">
+                <div class="home-indicator-back-overlay">
+                  <span class="home-indicator-back-tag">Marcas & Clientes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicador 3: Años de Experiencia -->
+            <div class="home-indicator-card" data-card-index="2">
+              <div class="home-indicator-front">
+                <div class="home-indicator-badge">
+                  <div class="home-indicator-fill"></div>
+                  <span class="home-indicator-number" data-target="6">0<span class="plus-sign">+</span></span>
+                </div>
+                <h3 class="home-indicator-title">AÑOS DE EXPERIENCIA</h3>
+                <p class="home-indicator-desc">
+                  Trayectoria contínua creando contenido visual, estrategias de redes y animaciones de estándar internacional.
+                </p>
+              </div>
+              <div class="home-indicator-back">
+                <video autoplay loop muted playsinline class="home-indicator-back-video">
+                  <source src="CLIPS/1.mp4" type="video/mp4">
+                </video>
+                <div class="home-indicator-back-overlay">
+                  <span class="home-indicator-back-tag">Años de Experiencia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicador 4: Áreas de Especialización -->
+            <div class="home-indicator-card" data-card-index="3">
+              <div class="home-indicator-front">
+                <div class="home-indicator-badge">
+                  <div class="home-indicator-fill"></div>
+                  <span class="home-indicator-number" data-target="11">0<span class="plus-sign">+</span></span>
+                </div>
+                <h3 class="home-indicator-title">ÁREAS DE ESPECIALIZACIÓN</h3>
+                <p class="home-indicator-desc">
+                  Dominio multidisciplinario en diseño de marca, 3D, motion graphics, video producción, campañas y gestión social.
+                </p>
+              </div>
+              <div class="home-indicator-back">
+                <img src="assets/showcase/social.jpg" alt="Áreas de Especialización" class="home-indicator-back-img">
+                <div class="home-indicator-back-overlay">
+                  <span class="home-indicator-back-tag">Especializaciones VO</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Banner Vimeo Limpio (Debajo de los Indicadores) -->
+      <div class="home-vimeo-banner-wrapper">
+        <div class="vimeo-embed-container">
+          <iframe src="https://player.vimeo.com/video/1227888182?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                  frameborder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  title="DEMO 2 ALTA"></iframe>
+        </div>
+      </div>
+
+      <!-- Carrusel de Publicaciones Destacadas (POST PORTA) - Debajo del Video de Home y Arriba de Testimonios -->
+      <div class="posts-showcase-wrapper" style="padding: 60px 0; margin: 0;">
+        <div class="section-header" style="text-align: center; margin-bottom: 24px;">
+          <h3 class="section-title" style="font-size: 1.85rem; text-transform: uppercase;">CONTENIDO DISEÑADO PARA VENDER</h3>
+          <p class="section-subtitle" style="font-family: 'Poppins', sans-serif !important; font-weight: 400 !important;">No publicamos por rellenar: creamos piezas estratégicas que detienen el scroll y transforman seguidores en clientes reales</p>
+        </div>
+
+        <div class="posts-carousel-container">
+          <button class="carousel-nav-btn prev-btn" id="postsCarouselPrevBtn" aria-label="Post anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+
+          <div class="posts-carousel-stage" id="postsCarouselStage">
+            <!-- Dynamic Post Cards rendered by JS -->
+          </div>
+
+          <button class="carousel-nav-btn next-btn" id="postsCarouselNextBtn" aria-label="Siguiente post">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Testimoniales Banner (Full-Width Completo a 100% Ancho sin espacio) -->
+      <div class="purple-testimonials-wrapper">
+        <!-- Video de Fondo con Bastante Desenfoque -->
+        <div class="testimonials-bg-video-container">
+          <video autoplay loop muted playsinline class="testimonials-bg-video-el">
+            <source src="PORTADA%20HOME.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+          <div class="testimonials-bg-video-overlay"></div>
+        </div>
+
+        <div class="testimonials-grid-4col" id="testimonialsGridContainer">
+          <!-- Dynamic Testimonial Cards -->
+        </div>
+      </div>
+
+      <!-- Preguntas Frecuentes Section (Full-Width 100%) -->
+      <div class="faq-section-wrapper" id="bloque-marcas">
+        <div class="container">
+          <div class="faq-header-center">
+            <h2 class="faq-title-big">PREGUNTAS <span class="purple-title-accent">FRECUENTES</span></h2>
+            <p class="faq-subtitle-text">Todo lo que necesitas saber antes de iniciar tu proyecto con nosotros</p>
+          </div>
+
+          <div class="faq-accordion-container" id="faqAccordionContainer">
+            <!-- Dynamic FAQ Accordion -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICIOS - CARRUSEL INFINITO DE TARJETAS -->
+    <section id="servicios" class="page-section" style="position: relative;">
+      <!-- Imagen de fondo completa desde la parte superior de la sección -->
+      <div class="service-hero-bg-overlay" id="serviceSectionBgOverlay"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <!-- Interactive Services Carousel (Carrusel Infinito de Tarjetas Rectangulares) -->
+
+        <!-- Interactive Services Carousel (Carrusel de 4 Tarjetas Rectangulares) -->
+        <div class="services-carousel-container">
+          <button class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="Servicio anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          
+          <div class="services-carousel-viewport">
+            <div class="services-carousel-track" id="serviceCarouselTrack">
+              <!-- 4 Dynamic Rectangular Service Cards -->
+            </div>
+          </div>
+
+          <button class="carousel-nav-btn next" id="carouselNextBtn" aria-label="Servicio siguiente">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+        <!-- Dynamic Active Service Panel & 3 Projects Showcase -->
+        <div class="service-panel-wrapper" id="servicePanelContainer">
+          <!-- Dynamic Content rendered by JS -->
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: QUIÉNES SOMOS (INDEPENDIENTE) -->
+    <section id="quienes-somos" class="page-section">
+      <!-- Portada Video Quiénes Somos (Full Width) -->
+      <div class="quienes-somos-cover-wrapper">
+        <video class="quienes-somos-cover-video" autoplay muted loop playsinline preload="auto">
+          <source src="SOMOS VO.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="container">
+        <!-- Banner Púrpura de Quiénes Somos -->
+        <div class="quienes-somos-purple-banner">
+          
+          <!-- 1. Bloque Misión (Tarjeta Blanca Superior) -->
+          <div class="about-white-card">
+            <h2 class="about-card-title">MISIÓN</h2>
+            <p class="about-card-text">
+              Proporcionar soluciones creativas de gestión de redes sociales, diseño gráfico y animación que ayuden a nuestros clientes a comunicar su visión de manera eficaz. Nos comprometemos a entregar productos de alta calidad que no solo satisfagan, sino que también superen las expectativas y contribuyan al éxito de nuestros clientes.
+            </p>
+          </div>
+
+          <!-- 2. Bloque Visión (Tarjeta Blanca Intermedia) -->
+          <div class="about-white-card">
+            <h2 class="about-card-title">VISIÓN</h2>
+            <p class="about-card-text">
+              Consolidarnos como líderes en el sector de diseño gráfico y animación digital, distinguidos por nuestra capacidad de innovar y adaptarnos a las cambiantes demandas del mercado. Nos esforzamos por ser un referente de creatividad, empoderando a nuestros clientes para que logren una comunicación visual impactante y efectiva.
+            </p>
+          </div>
+
+          <!-- 3. Bloque Valores (Grid de 3 Tarjetas Oscuras Inferior) -->
+          <div class="about-valores-grid">
+            <!-- Valor 1: Excelencia -->
+            <div class="about-valor-dark-card">
+              <div class="valor-icon-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+                <div class="stars-subrow">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+              </div>
+              <h3 class="valor-card-title">EXCELENCIA</h3>
+              <p class="valor-card-desc">
+                Nos comprometemos a mantener los más altos estándares de calidad en cada proyecto.
+              </p>
+            </div>
+
+            <!-- Valor 2: Colaboración -->
+            <div class="about-valor-dark-card">
+              <div class="valor-icon-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="valor-card-title">COLABORACIÓN</h3>
+              <p class="valor-card-desc">
+                Valoramos el trabajo conjunto y la co-creación con nuestros clientes para enriquecer cada diseño.
+              </p>
+            </div>
+
+            <!-- Valor 3: Innovación -->
+            <div class="about-valor-dark-card">
+              <div class="valor-icon-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="valor-card-title">INNOVACIÓN</h3>
+              <p class="valor-card-desc">
+                Constantemente buscamos y adoptamos nuevas técnicas y enfoques en diseño y animación.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4. Bloque Equipo Interactiva (Fuera de la tarjeta púrpura, justo debajo) -->
+        <div class="about-equipo-wrapper">
+          <div class="about-equipo-header">
+            <h2 class="about-card-title" style="margin-bottom: 0;">NUESTRO EQUIPO</h2>
+            <span class="equipo-subtitle-badge">El talento detrás de las marcas</span>
+          </div>
+
+          <div class="equipo-showcase-container" id="equipoShowcaseContainer">
+            <!-- 1. Vista Normal: 3 Columnas con Foto Completa y Texto Sobre la Foto -->
+            <div class="equipo-grid-3" id="equipoGridNormal">
+              <!-- Oscar -->
+              <div class="equipo-preview-card" onmouseenter="expandTeamMember(0)" onclick="expandTeamMember(0)" title="Ver perfil de Oscar Chavarría">
+                <img src="EQUIPO/1 OSCAR.jpg" alt="Oscar Chavarría - Lead Manager" class="equipo-preview-bg-img">
+                <div class="equipo-preview-overlay">
+                  <span class="equipo-preview-role">Lead Manager</span>
+                  <h4 class="equipo-preview-name">Oscar Chavarría</h4>
+                </div>
+              </div>
+
+              <!-- Mario -->
+              <div class="equipo-preview-card" onmouseenter="expandTeamMember(1)" onclick="expandTeamMember(1)" title="Ver perfil de Mario Chavarría">
+                <img src="EQUIPO/3 MARIO.jpg" alt="Mario Chavarría - Postproducción Audiovisual" class="equipo-preview-bg-img">
+                <div class="equipo-preview-overlay">
+                  <span class="equipo-preview-role">Postproducción Audiovisual</span>
+                  <h4 class="equipo-preview-name">Mario Chavarría</h4>
+                </div>
+              </div>
+
+              <!-- Anne -->
+              <div class="equipo-preview-card" onmouseenter="expandTeamMember(2)" onclick="expandTeamMember(2)" title="Ver perfil de Anne Regniet">
+                <img src="EQUIPO/2 ANNE.jpg" alt="Anne Regniet - Community Manager" class="equipo-preview-bg-img">
+                <div class="equipo-preview-overlay">
+                  <span class="equipo-preview-role">Community Manager</span>
+                  <h4 class="equipo-preview-name">Anne Regniet</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Vista Desplegada Detallada (Aparece al seleccionar o pasar el cursor) -->
+            <div class="equipo-interactive-card" id="equipoInteractiveCard" style="display: none;" onmouseleave="collapseTeamMember()">
+              <!-- Botón cerrar para volver a las 3 fotos -->
+              <button type="button" class="equipo-collapse-btn" onclick="collapseTeamMember()" aria-label="Cerrar y volver a las 3 fotos" title="Volver a las 3 fotos">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+
+              <!-- Columna Izquierda: Fotografía -->
+              <div class="equipo-photo-column">
+                <div class="equipo-photo-frame">
+                  <img id="equipoPhoto" src="EQUIPO/1 OSCAR.jpg" alt="Oscar Chavarría" class="equipo-photo-img">
+                  <div class="equipo-photo-badge" id="equipoIndexBadge">01 / 03</div>
+                </div>
+              </div>
+
+              <!-- Columna Derecha: Información y Softwares -->
+              <div class="equipo-info-column">
+                <div class="equipo-info-content" id="equipoInfoContent">
+                  <div class="equipo-role-pill" id="equipoRole">Lead Manager</div>
+                  <h3 class="equipo-name" id="equipoName">Oscar Chavarría</h3>
+                  <p class="equipo-desc" id="equipoDesc">
+                    Lidera la visión estratégica y creativa de Visual Oscart, coordinando proyectos integrales para potenciar la identidad visual y comunicación digital de marcas en Costa Rica y Latinoamérica.
+                  </p>
+                </div>
+
+                <!-- Softwares Utilizados -->
+                <div class="equipo-softwares-section">
+                  <div class="equipo-softwares-title">Softwares Utilizados</div>
+                  <div class="equipo-softwares-grid" id="equipoSoftwaresGrid">
+                    <!-- Recuadros de software generados dinámicamente -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: BLOG (INDEPENDIENTE) -->
+    <section id="blog" class="page-section">
+      <!-- Fondo de Video Fijo y Desenfocado Exclusivo de Blog -->
+      <div class="blog-sticky-bg-wrap">
+        <video autoplay loop muted playsinline class="blog-sticky-video-el">
+          <source src="PORTADA%20HOME.mp4" type="video/mp4">
+          Tu navegador no soporta reproducción de video HTML5.
+        </video>
+        <div class="blog-sticky-video-overlay"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 3;">
+        <!-- Buscador Inteligente de Blog -->
+        <div class="blog-search-container">
+          <div class="blog-search-box">
+            <svg class="blog-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="blogSearchInput" placeholder="Busca por palabra clave (ej. estrategia, branding, redes, diseño...)" aria-label="Buscar en el blog">
+            <button class="blog-search-clear-btn" id="blogSearchClearBtn" style="display: none;" aria-label="Limpiar búsqueda">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          
+          <!-- Quick Filter Tags removed as requested -->
+
+          <div class="blog-search-results-info" id="blogSearchResultsInfo" style="display: none;"></div>
+        </div>
+
+        <!-- Showcase de Blog Estilo Netflix -->
+        <div class="netflix-blog-showcase" id="netflixBlogShowcase">
+          <!-- Dynamic Netflix-style Blog Showcase rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACTO -->
+    <section id="contacto" class="page-section">
+      <!-- Fondo de Video Desenfocado con Zoom (Comp 2.mp4) -->
+      <div class="contacto-bg-video-wrap">
+        <video autoplay loop muted playsinline class="contacto-bg-video">
+          <source src="Comp 2.mp4" type="video/mp4">
+        </video>
+        <div class="contacto-bg-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Hablemos de tu Próximo Gran Proyecto</h2>
+          <p class="section-subtitle">¿Listo para potenciar la comunicación visual de tu marca? Completa el formulario o escríbenos directamente.</p>
+        </div>
+
+        <div class="calculator-grid" style="align-items: start;">
+          <!-- Formulario Directo al Correo (digital@visualoscart.com) via FormSubmit -->
+          <form class="calculator-box" action="https://formsubmit.co/digital@visualoscart.com" method="POST" style="margin: 0; padding: clamp(24px, 4vw, 36px);" id="mainContactForm">
+            <input type="hidden" name="_subject" value="¡Nuevo mensaje de solicitud en la web de Visual Oscart!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div style="margin-bottom: 20px;">
+              <label style="display: block; margin-bottom: 8px; font-weight: 700;">Nombre Completo / Empresa:</label>
+              <input type="text" name="Nombre_o_Empresa" required placeholder="Ej. Ana Rodríguez - Tech LatAm" style="width: 100%; padding: 14px; border-radius: var(--radius-md); background: var(--bg); border: 1px solid var(--border-color); color: var(--text-main);">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <label style="display: block; margin-bottom: 8px; font-weight: 700;">Correo Electrónico:</label>
+              <input type="email" name="Correo_Electronico" required placeholder="digital@tuempresa.com" style="width: 100%; padding: 14px; border-radius: var(--radius-md); background: var(--bg); border: 1px solid var(--border-color); color: var(--text-main);">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <label style="display: block; margin-bottom: 8px; font-weight: 700;">Servicio de Interés:</label>
+              <select name="Servicio_de_Interes" style="width: 100%; padding: 14px; border-radius: var(--radius-md); background: var(--bg); border: 1px solid var(--border-color); color: var(--text-main);">
+                <option value="Gestión de Redes Sociales">Gestión de Redes Sociales</option>
+                <option value="Diseño de Marca (Branding)">Diseño de Marca (Branding)</option>
+                <option value="Animación Digital (Motion Graphics)">Animación Digital (Motion Graphics)</option>
+                <option value="Producción Audiovisual">Producción Audiovisual</option>
+                <option value="Solución Integral 360°">Solución Integral 360°</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 24px;">
+              <label style="display: block; margin-bottom: 8px; font-weight: 700;">Detalles del Proyecto:</label>
+              <textarea name="Detalles_del_Proyecto" rows="4" required placeholder="Cuéntanos brevemente tus objetivos, tiempos deseados y alcance..." style="width: 100%; padding: 14px; border-radius: var(--radius-md); background: var(--bg); border: 1px solid var(--border-color); color: var(--text-main);"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Enviar Mensaje al Correo Directo
+            </button>
+
+            <!-- Inline Success/Status Notification Container -->
+            <div id="contactFormStatus" style="display: none; margin-top: 16px;"></div>
+          </form>
+
+          <!-- Bloque de Contacto Directo & Botón WhatsApp -->
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div class="service-card" style="padding: 32px;">
+              <h3 class="service-title" style="color: var(--accent-secondary); margin-bottom: 16px;">Contacto Directo</h3>
+              <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; margin-bottom: 20px;">
+                <strong style="color: #FFFFFF;">Email:</strong> <a href="mailto:digital@visualoscart.com" style="color: #f76319; text-decoration: underline;">digital@visualoscart.com</a><br>
+                <strong style="color: #FFFFFF;">WhatsApp / Celular:</strong> <a href="https://wa.me/50661078028" target="_blank" style="color: #8B5CF6; text-decoration: underline;">+506 6107 8028</a>
+              </p>
+
+              <!-- Botón directo a WhatsApp -->
+              <a href="https://wa.me/50661078028?text=Hola%20Visual%20Oscart!%20Quiero%20más%20información%20sobre%20sus%20servicios" target="_blank" class="btn-whatsapp-direct">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Escribir al WhatsApp Directo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Reader for Full Blog Articles -->
+  <div class="modal-overlay" id="blogArticleModal" onclick="if(event.target === this) closeBlogModal()">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeBlogModal()" aria-label="Cerrar modal">&times;</button>
+      <div id="blogArticleBody">
+        <!-- Article HTML content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Call-To-Action Button -->
+  <a href="https://wa.me/50661078028?text=Hola%20Visual%20Oscart!%20Quiero%20más%20información%20sobre%20sus%20servicios" target="_blank" class="whatsapp-float-btn" title="Contactar por WhatsApp" aria-label="Chat en WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Footer Component -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand-logo-wrap" style="margin-bottom: 16px; display: inline-block;">
+            <img src="LOGO VISUAL OSCART.png" alt="Logo Visual Oscart Footer" class="brand-logo-img">
+          </a>
+          <p class="footer-brand-desc">
+            Agencia creativa dedicada a potenciar marcas a través de soluciones integrales en comunicación visual y digital en Costa Rica y Latinoamérica.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Especializaciones</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios">Gestión de Redes Sociales</a></li>
+            <li><a href="#servicios">Diseño de Marca</a></li>
+            <li><a href="#servicios">Animación Digital</a></li>
+            <li><a href="#servicios">Producción Audiovisual</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Cobertura SEO</h4>
+          <p style="color: var(--text-muted); margin-bottom: 12px;">
+            Servicios estratégicos de marketing y diseño visual para empresas en Costa Rica, Panamá, Colombia, México y toda la región LatAm.
+          </p>
+          <span class="badge-pill" style="padding: 4px 10px;">Costa Rica & LatAm</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Visual Oscart. Todos los derechos reservados.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#home">Privacidad</a>
+          <a href="#home">Términos</a>
+        </div>
+      </div>
+    </div>
+  <!-- Modal de Caso de Estudio por Protocolo (Gestión de Redes Sociales) -->
+  <div class="case-study-modal-overlay" id="caseStudyModal" role="dialog" aria-hidden="true">
+    <button class="modal-close-btn" id="caseStudyModalCloseBtn" aria-label="Cerrar caso de estudio">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="case-study-modal-container" id="caseStudyModalContent">
+      <!-- Dynamic Case Study Protocol Content -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="js/content.js?v=113"></script>
+  <script src="js/app.js?v=113"></script>
+
+  <!-- Auto-Recarga Automática para Desarrollo -->
+  <script>
+    (function() {
+      let lastMod = null;
+      setInterval(function() {
+        fetch(window.location.href, { cache: 'no-store', method: 'HEAD' })
+          .then(function(res) {
+            var mod = res.headers.get('last-modified');
+            if (lastMod && mod && lastMod !== mod) {
+              window.location.reload();
+            }
+            lastMod = mod || lastMod;
+          })
+          .catch(function() {
+            // Fallback si se visualiza mediante archivo directo
+          });
+      }, 1500);
+    })();
+  </script>
+</body>
+</html>
