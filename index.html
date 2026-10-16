@@ -31,7 +31,7 @@
   <link rel="apple-touch-icon" href="assets/favicon.png">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles/main.css?v=113">
+  <link rel="stylesheet" href="styles/main.css?v=139">
 
   <!-- Estilos Directos para Tarjeta Intro y 4 Indicadores -->
   <style id="home-indicator-direct-styles">
@@ -513,6 +513,331 @@
         padding: 24px 20px !important;
       }
     }
+
+    /* ==========================================================================
+       Sección Nuestro Equipo: Acordeón Horizontal Dinámico Premium
+       ========================================================================== */
+    .about-equipo-wrapper {
+      margin-top: 40px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 20px !important;
+      width: 100% !important;
+    }
+
+    .about-equipo-header {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      flex-wrap: wrap !important;
+      gap: 12px !important;
+      margin-bottom: 8px !important;
+    }
+
+    .equipo-subtitle-badge {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 0.82rem !important;
+      font-weight: 700 !important;
+      color: #f76319 !important;
+      background: rgba(247, 99, 25, 0.12) !important;
+      border: 1px solid rgba(247, 99, 25, 0.35) !important;
+      padding: 6px 14px !important;
+      border-radius: 9999px !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.05em !important;
+    }
+
+    .equipo-showcase-container {
+      width: 100% !important;
+      position: relative !important;
+    }
+
+    .equipo-accordion-track {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 16px !important;
+      width: 100% !important;
+      height: 480px !important;
+      max-height: 480px !important;
+      position: relative !important;
+    }
+
+    .equipo-accordion-card {
+      flex: 1 !important;
+      position: relative !important;
+      height: 100% !important;
+      border-radius: 20px !important;
+      overflow: hidden !important;
+      background: #FFFFFF !important;
+      border: 1.5px solid rgba(15, 23, 42, 0.12) !important;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08) !important;
+      cursor: pointer !important;
+      transition: flex 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.35s ease,
+                  box-shadow 0.35s ease,
+                  opacity 0.4s ease,
+                  filter 0.45s ease !important;
+      user-select: none !important;
+    }
+
+    .equipo-accordion-card.active {
+      flex: 2.4 !important;
+      border-color: #8B5CF7 !important;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18), 0 0 30px rgba(139, 92, 247, 0.22) !important;
+    }
+
+    .equipo-accordion-track.has-active .equipo-accordion-card:not(.active) {
+      opacity: 0.62 !important;
+      filter: grayscale(18%) !important;
+    }
+
+    .equipo-accordion-track.has-active .equipo-accordion-card:not(.active):hover {
+      opacity: 0.92 !important;
+      filter: grayscale(0%) !important;
+    }
+
+    .equipo-card-media {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
+    }
+
+    .equipo-card-img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: 85% 15% !important;
+      display: block !important;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  object-position 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .equipo-accordion-card.active .equipo-card-img {
+      object-position: center 15% !important;
+    }
+
+    /* Eliminar degradados oscuros para diseño blanco editorial */
+    .equipo-card-gradient {
+      background: none !important;
+      opacity: 0 !important;
+      display: none !important;
+    }
+
+    .equipo-accordion-card:hover .equipo-card-img,
+    .equipo-accordion-card.active .equipo-card-img {
+      transform: scale(1.04) !important;
+    }
+
+    .equipo-card-badge {
+      display: none !important;
+    }
+
+    .equipo-card-collapsed {
+      position: absolute !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      padding: 24px 20px !important;
+      z-index: 3 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 5px !important;
+      transition: opacity 0.3s ease, transform 0.3s ease !important;
+    }
+
+    .equipo-accordion-card.active .equipo-card-collapsed {
+      opacity: 0 !important;
+      transform: translateY(14px) !important;
+      pointer-events: none !important;
+    }
+
+    .equipo-collapsed-name {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 1.12rem !important;
+      font-weight: 800 !important;
+      color: #3F3F46 !important;
+      margin: 0 !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      max-width: 100% !important;
+    }
+
+    .equipo-collapsed-role {
+      display: inline-block !important;
+      align-self: flex-start !important;
+      background: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%) !important;
+      color: #FFFFFF !important;
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 700 !important;
+      font-size: 0.67rem !important;
+      padding: 3px 10px !important;
+      border-radius: 9999px !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.04em !important;
+      box-shadow: 0 3px 10px rgba(124, 58, 237, 0.25) !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      max-width: 95% !important;
+    }
+
+    .equipo-card-expanded {
+      position: absolute !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      padding: 28px 24px !important;
+      z-index: 4 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+      opacity: 0 !important;
+      transform: translateY(18px) !important;
+      pointer-events: none !important;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s,
+                  transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s !important;
+    }
+
+    .equipo-accordion-card.active .equipo-card-expanded {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+      max-width: 58% !important;
+    }
+
+    .equipo-expanded-header {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 6px !important;
+    }
+
+    .equipo-expanded-name {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: clamp(1.25rem, 1.8vw, 1.65rem) !important;
+      font-weight: 900 !important;
+      color: #3F3F46 !important;
+      line-height: 1.15 !important;
+      margin: 0 !important;
+    }
+
+    .equipo-expanded-pill {
+      display: inline-block !important;
+      align-self: flex-start !important;
+      background: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%) !important;
+      color: #FFFFFF !important;
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 700 !important;
+      font-size: 0.70rem !important;
+      padding: 3px 10px !important;
+      border-radius: 9999px !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.04em !important;
+      box-shadow: 0 3px 10px rgba(124, 58, 237, 0.25) !important;
+    }
+
+    .equipo-expanded-desc {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 0.92rem !important;
+      color: #71717A !important;
+      font-weight: 500 !important;
+      line-height: 1.55 !important;
+      margin: 0 !important;
+      max-width: 540px !important;
+    }
+
+    .equipo-expanded-softwares {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 8px !important;
+      margin-top: 4px !important;
+    }
+
+    .equipo-softwares-header {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 0.74rem !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.08em !important;
+      color: #71717A !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+
+    .equipo-softwares-header::after {
+      content: '' !important;
+      flex: 1 !important;
+      height: 1px !important;
+      background: rgba(113, 113, 122, 0.2) !important;
+    }
+
+    .equipo-softwares-slots {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      flex-wrap: wrap !important;
+    }
+
+    .equipo-soft-slot {
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 12px !important;
+      background: #FFFFFF !important;
+      border: 1px solid rgba(15, 23, 42, 0.1) !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .equipo-soft-slot:hover {
+      border-color: #7C3AED !important;
+      box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25) !important;
+      transform: translateY(-2px) scale(1.06) !important;
+    }
+
+    .equipo-soft-img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      border-radius: inherit !important;
+      display: block !important;
+    }
+    @media (max-width: 850px) {
+      .equipo-accordion-track {
+        flex-direction: column !important;
+        height: auto !important;
+        max-height: none !important;
+        gap: 16px !important;
+      }
+      .equipo-accordion-card {
+        height: 320px !important;
+        flex: none !important;
+      }
+      .equipo-accordion-card.active {
+        height: 480px !important;
+      }
+      .equipo-accordion-card.active .equipo-card-expanded {
+        max-width: 100% !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        border-radius: 16px !important;
+        padding: 18px 16px !important;
+      }
+      .equipo-card-expanded {
+        padding: 22px 18px !important;
+      }
+    }
   </style>
 
   <!-- JSON-LD Structured Data Schema.org -->
@@ -928,66 +1253,126 @@
           </div>
 
           <div class="equipo-showcase-container" id="equipoShowcaseContainer">
-            <!-- 1. Vista Normal: 3 Columnas con Foto Completa y Texto Sobre la Foto -->
-            <div class="equipo-grid-3" id="equipoGridNormal">
-              <!-- Oscar -->
-              <div class="equipo-preview-card" onmouseenter="expandTeamMember(0)" onclick="expandTeamMember(0)" title="Ver perfil de Oscar Chavarría">
-                <img src="EQUIPO/1 OSCAR.jpg" alt="Oscar Chavarría - Lead Manager" class="equipo-preview-bg-img">
-                <div class="equipo-preview-overlay">
-                  <span class="equipo-preview-role">Lead Manager</span>
-                  <h4 class="equipo-preview-name">Oscar Chavarría</h4>
+            <!-- Acordeón Horizontal Dinámico de 3 Integrantes -->
+            <div class="equipo-accordion-track" id="equipoAccordionTrack" onmouseleave="resetAccordionCards()">
+              <!-- 01: Oscar Chavarría -->
+              <div class="equipo-accordion-card" data-index="0" onmouseenter="activateAccordionCard(0)" onclick="toggleAccordionCard(0)">
+                <div class="equipo-card-media">
+                  <img src="EQUIPO/1%20OSCAR.jpg?v=20261015" alt="Oscar Chavarría - Lead Manager" class="equipo-card-img">
+                  <div class="equipo-card-gradient"></div>
                 </div>
-              </div>
-
-              <!-- Mario -->
-              <div class="equipo-preview-card" onmouseenter="expandTeamMember(1)" onclick="expandTeamMember(1)" title="Ver perfil de Mario Chavarría">
-                <img src="EQUIPO/3 MARIO.jpg" alt="Mario Chavarría - Postproducción Audiovisual" class="equipo-preview-bg-img">
-                <div class="equipo-preview-overlay">
-                  <span class="equipo-preview-role">Postproducción Audiovisual</span>
-                  <h4 class="equipo-preview-name">Mario Chavarría</h4>
+                
+                <!-- Vista Colapsada (Visible cuando está en reposo / no activa) -->
+                <div class="equipo-card-collapsed">
+                  <h4 class="equipo-collapsed-name">Oscar Chavarría</h4>
+                  <span class="equipo-collapsed-role">Lead Manager</span>
                 </div>
-              </div>
 
-              <!-- Anne -->
-              <div class="equipo-preview-card" onmouseenter="expandTeamMember(2)" onclick="expandTeamMember(2)" title="Ver perfil de Anne Regniet">
-                <img src="EQUIPO/2 ANNE.jpg" alt="Anne Regniet - Community Manager" class="equipo-preview-bg-img">
-                <div class="equipo-preview-overlay">
-                  <span class="equipo-preview-role">Community Manager</span>
-                  <h4 class="equipo-preview-name">Anne Regniet</h4>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2. Vista Desplegada Detallada (Aparece al seleccionar o pasar el cursor) -->
-            <div class="equipo-interactive-card" id="equipoInteractiveCard" style="display: none;" onmouseleave="collapseTeamMember()">
-              <!-- Botón cerrar para volver a las 3 fotos -->
-              <button type="button" class="equipo-collapse-btn" onclick="collapseTeamMember()" aria-label="Cerrar y volver a las 3 fotos" title="Volver a las 3 fotos">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-              </button>
-
-              <!-- Columna Izquierda: Fotografía -->
-              <div class="equipo-photo-column">
-                <div class="equipo-photo-frame">
-                  <img id="equipoPhoto" src="EQUIPO/1 OSCAR.jpg" alt="Oscar Chavarría" class="equipo-photo-img">
-                  <div class="equipo-photo-badge" id="equipoIndexBadge">01 / 03</div>
-                </div>
-              </div>
-
-              <!-- Columna Derecha: Información y Softwares -->
-              <div class="equipo-info-column">
-                <div class="equipo-info-content" id="equipoInfoContent">
-                  <div class="equipo-role-pill" id="equipoRole">Lead Manager</div>
-                  <h3 class="equipo-name" id="equipoName">Oscar Chavarría</h3>
-                  <p class="equipo-desc" id="equipoDesc">
-                    Lidera la visión estratégica y creativa de Visual Oscart, coordinando proyectos integrales para potenciar la identidad visual y comunicación digital de marcas en Costa Rica y Latinoamérica.
+                <!-- Vista Expandida (Se anima y revela al expandirse el acordeón) -->
+                <div class="equipo-card-expanded">
+                  <div class="equipo-expanded-header">
+                    <h3 class="equipo-expanded-name">Oscar Chavarría</h3>
+                    <span class="equipo-expanded-pill">Lead Manager</span>
+                  </div>
+                  <p class="equipo-expanded-desc">
+                    Lidera la visión y dirección creativa de Visual Oscart, coordinando proyectos integrales, animación digital 3D y campañas estratégicas en redes sociales para impulsar marcas de alto impacto.
                   </p>
+                  <div class="equipo-expanded-softwares">
+                    <div class="equipo-softwares-header">Softwares Utilizados</div>
+                    <div class="equipo-softwares-slots">
+                      <div class="equipo-soft-slot" title="Software Oscar 1">
+                        <img src="APPS/OSCAR%201.jpg?v=20261015" alt="Software Oscar 1" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Oscar 2">
+                        <img src="APPS/OSCAR%202.jpg?v=20261015" alt="Software Oscar 2" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Oscar 3">
+                        <img src="APPS/OSCAR%203.jpg?v=20261015" alt="Software Oscar 3" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Oscar 4">
+                        <img src="APPS/OSCAR%204.jpg?v=20261015" alt="Software Oscar 4" class="equipo-soft-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 02: Mario Chavarría -->
+              <div class="equipo-accordion-card" data-index="1" onmouseenter="activateAccordionCard(1)" onclick="toggleAccordionCard(1)">
+                <div class="equipo-card-media">
+                  <img src="EQUIPO/3%20MARIO.jpg?v=20261015" alt="Mario Chavarría - Producción Audiovisual" class="equipo-card-img">
+                  <div class="equipo-card-gradient"></div>
                 </div>
 
-                <!-- Softwares Utilizados -->
-                <div class="equipo-softwares-section">
-                  <div class="equipo-softwares-title">Softwares Utilizados</div>
-                  <div class="equipo-softwares-grid" id="equipoSoftwaresGrid">
-                    <!-- Recuadros de software generados dinámicamente -->
+                <div class="equipo-card-collapsed">
+                  <h4 class="equipo-collapsed-name">Mario Chavarría</h4>
+                  <span class="equipo-collapsed-role">Producción Audiovisual</span>
+                </div>
+
+                <div class="equipo-card-expanded">
+                  <div class="equipo-expanded-header">
+                    <h3 class="equipo-expanded-name">Mario Chavarría</h3>
+                    <span class="equipo-expanded-pill">Producción Audiovisual</span>
+                  </div>
+                  <p class="equipo-expanded-desc">
+                    Especialista en producción y edición de video, postproducción avanzada, corrección de color y motion graphics, aportando dinamismo y el máximo estándar visual a cada pieza publicitaria.
+                  </p>
+                  <div class="equipo-expanded-softwares">
+                    <div class="equipo-softwares-header">Softwares Utilizados</div>
+                    <div class="equipo-softwares-slots">
+                      <div class="equipo-soft-slot" title="Software Mario 1">
+                        <img src="APPS/MARIO%201.jpg?v=20261015" alt="Software Mario 1" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Mario 2">
+                        <img src="APPS/MARIO%202.jpg?v=20261015" alt="Software Mario 2" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Mario 3">
+                        <img src="APPS/MARIO%203.jpg?v=20261015" alt="Software Mario 3" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Mario 4">
+                        <img src="APPS/MARIO%204.jpg?v=20261015" alt="Software Mario 4" class="equipo-soft-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 03: Annemarie Regniet -->
+              <div class="equipo-accordion-card" data-index="2" onmouseenter="activateAccordionCard(2)" onclick="toggleAccordionCard(2)">
+                <div class="equipo-card-media">
+                  <img src="EQUIPO/2%20ANNE.jpg?v=20261015" alt="Annemarie Regniet - Community Manager" class="equipo-card-img">
+                  <div class="equipo-card-gradient"></div>
+                </div>
+
+                <div class="equipo-card-collapsed">
+                  <h4 class="equipo-collapsed-name">Annemarie Regniet</h4>
+                  <span class="equipo-collapsed-role">Community Manager</span>
+                </div>
+
+                <div class="equipo-card-expanded">
+                  <div class="equipo-expanded-header">
+                    <h3 class="equipo-expanded-name">Annemarie Regniet</h3>
+                    <span class="equipo-expanded-pill">Community Manager</span>
+                  </div>
+                  <p class="equipo-expanded-desc">
+                    Gestiona la presencia digital de las marcas en redes sociales, estructurando calendarios estratégicos, programación organizada de publicaciones e interacción constante con la comunidad.
+                  </p>
+                  <div class="equipo-expanded-softwares">
+                    <div class="equipo-softwares-header">Softwares Utilizados</div>
+                    <div class="equipo-softwares-slots">
+                      <div class="equipo-soft-slot" title="Software Annemarie 1">
+                        <img src="APPS/ANNE%201.jpg?v=20261015" alt="Software Annemarie 1" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Annemarie 2">
+                        <img src="APPS/ANNE%202.jpg?v=20261015" alt="Software Annemarie 2" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Annemarie 3">
+                        <img src="APPS/ANNE%203.jpg?v=20261015" alt="Software Annemarie 3" class="equipo-soft-img">
+                      </div>
+                      <div class="equipo-soft-slot" title="Software Annemarie 4">
+                        <img src="APPS/ANNE%204.jpg?v=20261015" alt="Software Annemarie 4" class="equipo-soft-img">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1192,8 +1577,8 @@
 
   <!-- Scripts -->
   <script src="https://player.vimeo.com/api/player.js"></script>
-  <script src="js/content.js?v=116"></script>
-  <script src="js/app.js?v=116"></script>
+  <script src="js/content.js?v=138"></script>
+  <script src="js/app.js?v=139"></script>
 
   <!-- Auto-Recarga Automática para Desarrollo (solo en localhost) -->
   <script>

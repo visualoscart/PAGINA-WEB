@@ -87,39 +87,371 @@ const SERVICES_DATA = [
       "Assets digitales para web, firmas de correo y kits de prensa"
     ],
     fullDesc: "Creamos conceptos visuales perdurables. Diseñamos marcas con personalidad clara, preparadas para escalar en mercados locales e internacionales con coherencia en cada punto de contacto.",
-    priceBase: 500
+    priceBase: 500,
+    packageIncludes: {
+      title: "Este Paquete Incluye:",
+      columns: [
+        {
+          id: "identidad-visual",
+          title: "Identidad Visual & Logotipo",
+          badge: "Sistema Completo",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>`,
+          items: [
+            "Logotipo en todos los formatos (PNG, color, blanco y negro, PDF e ilustrador .AI).",
+            "Concepto del logo.",
+            "Zona de protección.",
+            "Paleta de color.",
+            "Paleta tipográfica.",
+            "Versiones de logotipo.",
+            "Patrón y aplicación de fondos.",
+            "Mockup del logotipo."
+          ]
+        },
+        {
+          id: "redes-sociales",
+          title: "Paquete de Redes Sociales",
+          badge: "Lanzamiento Digital",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>`,
+          items: [
+            "Foto de perfil para Redes Sociales.",
+            "Foto de portada para Facebook.",
+            "Post e historia de lanzamiento de marca."
+          ]
+        }
+      ],
+      regalia: {
+        title: "REGALÍA",
+        badge: "Cortesía Exclusiva",
+        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>`,
+        items: [
+          "Animación digital del logotipo personalizada.",
+          "Formato video MP4.",
+          "Duración máxima 7 segundos."
+        ]
+      }
+    },
+    methodologyTitle: "Proceso de Trabajo en Diseño de Marca (Duración: Aprox. 2 Semanas)",
+    phases: [
+      {
+        phaseNumber: "FASE 1",
+        title: "DIAGNÓSTICO, BRIEFING & ESTUDIO DE MERCADO VISUAL",
+        badge: "Semana 1 · Inmersión Estratégica",
+        description: "Iniciamos con una reunión virtual interactiva donde realizamos un cuestionario estratégico para entender a fondo las necesidades de la marca y hacia dónde se quiere dirigir; con ello obtenemos el brief con el que trabajamos. Además, realizamos un estudio de mercado visual para entender qué beneficia y potencia la identidad de la marca en su sector.",
+        processes: [
+          "Reunión virtual de diagnóstico e inmersión inicial",
+          "Cuestionario estratégico para entender necesidades y visión",
+          "Consolidación y aprobación del brief de trabajo",
+          "Estudio de mercado visual y análisis de referentes del sector",
+          "Definición de lineamientos estratégicos y territorio visual"
+        ],
+        pillars: [
+          {
+            title: "Reunión Virtual & Cuestionario",
+            desc: "Sesión virtual directa para profundizar en el modelo de negocio, valores, público meta y rumbo de la marca."
+          },
+          {
+            title: "Briefing Estratégico",
+            desc: "Obtención del documento guía y mapa conceptual sobre el cual se desarrollarán las soluciones visuales."
+          },
+          {
+            title: "Estudio de Mercado Visual",
+            desc: "Investigación visual del entorno competitivo para identificar oportunidades de diferenciación que beneficien a la marca."
+          }
+        ]
+      },
+      {
+        phaseNumber: "FASE 2",
+        title: "PROPUESTAS DE LOGO & PALETA DE COLOR",
+        badge: "Semana 1 - 2 · Creación & Presentación Virtual",
+        description: "Nos encargamos de la elaboración de dos propuestas completas de logotipo junto con propuestas de paleta de color corporativa. Luego nos reunimos virtualmente para presentar las propuestas en contexto real, obtenemos el feedback del cliente y con ello ajustamos detalles con total precisión.",
+        processes: [
+          "Diseño de dos propuestas conceptuales de logotipo",
+          "Exploración y definición de propuestas de paleta de color",
+          "Montaje de presentaciones contextualizadas de marca",
+          "Reunión virtual para presentar las propuestas al cliente",
+          "Recepción de feedback del cliente y ajuste fino de detalles"
+        ],
+        pillars: [
+          {
+            title: "2 Propuestas de Logotipo",
+            desc: "Desarrollo de dos conceptos de logotipo únicos, versátiles y de alto impacto, diseñados a la medida de los objetivos."
+          },
+          {
+            title: "Propuestas de Paleta de Color",
+            desc: "Exploración cromática armónica y profesional que proyecta los valores y la emoción adecuada de la marca."
+          },
+          {
+            title: "Presentación Virtual & Feedback",
+            desc: "Reunión interactiva para exponer el concepto de cada propuesta, escuchar tus comentarios y pulir cada detalle."
+          }
+        ]
+      },
+      {
+        phaseNumber: "FASE 3",
+        title: "IDENTIDAD VISUAL, MANUAL & ENTREGA",
+        badge: "Semana 2 · Desarrollo Integral & Entrega Final",
+        description: "Una vez escogido el logo y los colores definitivos, desarrollamos la identidad visual restante: tipografía, recursos gráficos, patrones, aplicaciones, manual de identidad visual y el paquete de redes sociales. Finalmente, realizamos la entrega de todo el material organizado en formatos editables y listos para usar, incluyendo la regalía de animación de logo.",
+        processes: [
+          "Definición de la paleta tipográfica corporativa",
+          "Diseño de recursos visuales, patrones y fondos de marca",
+          "Creación de mockups fotorrealistas de aplicación",
+          "Elaboración del Manual de Identidad Visual completo",
+          "Desarrollo del paquete de redes sociales (perfil, portada y lanzamiento)",
+          "Producción de la animación digital del logotipo (Regalía MP4)",
+          "Entrega final de todos los archivos organizados (.AI, .PDF, .PNG)"
+        ],
+        pillars: [
+          {
+            title: "Identidad Visual & Recursos",
+            desc: "Tipografía oficial, patrones, texturas, zona de protección, versiones y aplicaciones mockups del logotipo."
+          },
+          {
+            title: "Manual de Identidad & Redes Sociales",
+            desc: "Guía completa de normas de uso, foto de perfil, foto de portada para Facebook y post e historia de lanzamiento."
+          },
+          {
+            title: "Entrega Final & Regalía de Animación",
+            desc: "Entrega completa en formatos vectoriales y de alta resolución, junto al video MP4 de la animación digital del logotipo."
+          }
+        ]
+      }
+    ]
   },
   {
     id: "animacion-digital",
     title: "Animación Digital",
-    shortDesc: "Motion graphics y piezas audiovisuales dinámicas que aportan impacto, diferencian tu mensaje y cautivan la atención al instante.",
+    shortDesc: "Motion graphics 2D y 3D, videos corporativos, animación de logotipos y visuales escénicos diseñados para cautivar y comunicar con impacto.",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"></path><circle cx="12" cy="12" r="10"></circle></svg>`,
-    badge: "Motion Graphics",
+    badge: "Motion Graphics & 3D",
     deliverables: [
-      "Motion graphics 2D y 3D para redes y publicidad",
-      "Videos explicativos animados (Explainer Videos)",
-      "Logotipos animados e intrometidas para marca",
-      "Piezas verticales dinámicas para Reels, TikTok y Stories",
-      "Animación de datos e infografías cinéticas"
+      "Briefing estratégico, conceptualización y guion técnico",
+      "Styleframes en alta fidelidad y storyboard escena por escena",
+      "Animación 2D / 3D en After Effects, Cinema 4D y Blender",
+      "Diseño sonoro a medida (Sound Design, SFX y locución)",
+      "Formatos optimizados para pantallas, redes sociales y web"
     ],
-    fullDesc: "El movimiento genera conexión instantánea. Desarrollamos piezas animadas con ritmo visual perfecto, transiciones fluidas y diseño de sonido que multiplican el tiempo de retención de tu audiencia.",
-    priceBase: 400
+    fullDesc: "Damos vida a tus ideas a través del diseño en movimiento y la animación digital. Ayudamos a marcas y empresas a explicar productos, conectar con su público y destacar en cualquier pantalla mediante piezas animadas con ritmo milimétrico, narrativa persuasiva y diseño de sonido envolvente.",
+    priceBase: 400,
+    serviceTypes: [
+      {
+        id: "motion-graphics",
+        title: "Motion Graphics 2D y 3D",
+        subtitle: "Gráficos Cinéticos & Modelado Tridimensional",
+        desc: "Gráficos vectoriales en movimiento, tipografía cinética y modelado tridimensional para comunicar ideas de manera visualmente magnética, transformando mensajes complejos en piezas memorables.",
+        tags: ["2D & 3D", "After Effects", "Cinema 4D", "Blender"],
+        video: "ANIMACIONES/MOTION ANIMACIÓN.mp4"
+      },
+      {
+        id: "corporativos",
+        title: "Videos Corporativos & Explicativos",
+        subtitle: "Explainer Videos & Comunicación de Negocio",
+        desc: "Piezas audiovisuales dinámicas (Explainer Videos) que simplifican productos, plataformas digitales, apps o cultura empresarial con narrativa atractiva para clientes e inversionistas.",
+        tags: ["Explainer Videos", "Storytelling", "Institucional", "Ventas"],
+        video: "ANIMACIONES/CORPORATIVO ANIMACIÓN.mp4"
+      },
+      {
+        id: "logos",
+        title: "Animación de Logotipos (Logo Reveals)",
+        subtitle: "Motion Branding & Identidad Sonora",
+        desc: "Animación identitaria del logotipo con movimiento fluido y diseño sonoro exclusivo, perfecta para intros y outros de videos, presentaciones ejecutivas y redes sociales.",
+        tags: ["Logo Reveals", "Motion Branding", "Intros & Outros", "Identidad Sonora"],
+        video: "ANIMACIONES/LOGOS ANIMACIÓN.mp4"
+      },
+      {
+        id: "visuales",
+        title: "Visuales para Eventos & Pantallas",
+        subtitle: "Pantallas LED, Loops en Bucle & Escenografías",
+        desc: "Fondos animados en bucle (loops), visuales de gran formato para pantallas LED, conciertos, ferias comerciales, lanzamientos de producto y escenografías digitales inmersivas.",
+        tags: ["Pantallas LED", "Loops en Bucle", "Ferias & Eventos", "Gran Formato"],
+        video: "ANIMACIONES/VISUALES ANIMACIÓN.mp4"
+      },
+      {
+        id: "redes-sociales",
+        title: "Animación Publicitaria para Redes Sociales",
+        subtitle: "Contenido Vertical & Ads de Conversión",
+        desc: "Piezas dinámicas verticales (9:16) y cuadradas con ganchos visuales en los primeros 3 segundos, diseñadas para disparar el tiempo de retención y la conversión en Reels y TikTok.",
+        tags: ["Reels & TikTok", "Stories", "Ads de Conversión", "Formato 9:16"],
+        video: "ANIMACIONES/REDES SOCIALES ANIAMCION.mp4"
+      }
+    ],
+    methodologyTitle: "Proceso de Trabajo en Animación Paso a Paso",
+    phases: [
+      {
+        phaseNumber: "FASE 1",
+        title: "PREPRODUCCIÓN: BRIEFING, ESTRATEGIA & GUION",
+        badge: "Estrategia & Planificación",
+        description: "Todo gran proyecto animado comienza entendiendo los objetivos comerciales y el público meta. En esta etapa redactamos el guion literario y técnico que define palabra por palabra el mensaje, los textos en pantalla y la duración exacta de cada bloque antes de animar.",
+        processes: [
+          "Reunión de briefing y análisis de objetivos de comunicación",
+          "Redacción de guion literario con desglose de escenas",
+          "Estructura del mensaje en bloques lógicos y tiempos precisos (timing)",
+          "Definición del estilo visual y propuesta de narrativa gráfica"
+        ],
+        pillars: [
+          {
+            title: "Briefing & Objetivos de Comunicación",
+            desc: "Reunión estratégica para entender a fondo qué se desea comunicar, la audiencia meta, el tono de marca y los canales de difusión del video."
+          },
+          {
+            title: "Guion Literario & Técnico",
+            desc: "Redacción palabra por palabra de los textos en pantalla y el mensaje narrativo, estructurando cada escena por bloques lógicos y tiempos exactos."
+          }
+        ]
+      },
+      {
+        phaseNumber: "FASE 2",
+        title: "DISEÑO VISUAL: STYLEFRAMES & STORYBOARD",
+        badge: "Visualización & Aprobación Previa",
+        description: "Antes de mover un solo fotograma, definimos con exactitud la apariencia del video. Diseñamos cuadros de estilo con la identidad gráfica del cliente y bocetamos la secuencia plano a plano para asegurar que el cliente apruebe la estética antes de la animación.",
+        processes: [
+          "Creación de moodboard de inspiración y paleta cromática",
+          "Diseño de styleframes (cuadros de estilo en alta fidelidad)",
+          "Bocetado de storyboard escena por escena con notas técnicas",
+          "Validación y aprobación del estilo visual con el cliente",
+          "Vectorización y separación de capas en Illustrator, Photoshop y 3D"
+        ],
+        pillars: [
+          {
+            title: "Styleframes (Línea Gráfica en Alta Fidelidad)",
+            desc: "Diseño de muestras de estilo estáticas que definen la paleta de colores, tipografías corporativas, texturas y estética final del proyecto."
+          },
+          {
+            title: "Storyboard (Guion Gráfico Cuadro a Cuadro)",
+            desc: "Mapa visual que combina los textos del guion con los planos que ilustrarán cada escena, permitiendo visualizar la narrativa y transiciones."
+          },
+          {
+            title: "Vectorización & Separación de Assets",
+            desc: "Preparación técnica de ilustraciones, tipografías y modelos 3D divididos en capas independientes listas para el software de animación."
+          }
+        ]
+      },
+      {
+        phaseNumber: "FASE 3",
+        title: "PRODUCCIÓN: ANIMACIÓN & MOTION DESIGN",
+        badge: "Movimiento, Físicas & Dinamismo",
+        description: "La etapa donde los gráficos cobran vida técnica. En programas especializados (After Effects, Cinema 4D, Blender) aplicamos las leyes del movimiento, curvas de aceleración y dinámicas visuales para un resultado cinematográfico.",
+        processes: [
+          "Importación de assets a After Effects, Cinema 4D y Blender",
+          "Animación de tipografías cinéticas y gráficos vectoriales 2D",
+          "Modelado, texturizado e iluminación de elementos y escenas 3D",
+          "Curvas de aceleración y dinámicas de movimiento profesional",
+          "Renderizado por pases y entrega en alta resolución"
+        ],
+        pillars: [
+          {
+            title: "Animación de Gráficos (Motion Design 2D & 3D)",
+            desc: "Creación de movimientos fluidos, tipografías cinéticas, morfismos y transformaciones geométricas alineadas a la narrativa."
+          },
+          {
+            title: "Principios de Animación & Curvas de Aceleración",
+            desc: "Aplicación de curvas Bézier (ease in / ease out), anticipación, peso y rebote para movimientos naturales, enérgicos y atractivos."
+          }
+        ]
+      }
+    ]
   },
   {
     id: "produccion-audiovisual",
     title: "Producción Audiovisual",
-    shortDesc: "Creación de spots publicitarios, coberturas de eventos y contenido audiovisual estratégico diseñado para campañas de alto nivel.",
+    shortDesc: "Soluciones audiovisuales integrales: preproducción estratégica, rodaje cinematográfico y postproducción avanzada para marcas y empresas de alto nivel.",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>`,
-    badge: "Film & Production",
+    badge: "Film & Cinematografía",
     deliverables: [
-      "Guionismo técnico, storyboard y dirección de arte",
-      "Rodaje con equipos cinematográficos 4K y drones",
-      "Edición, corrección de color y etalonaje profesional",
-      "Diseño de audio, locución y banda sonora original",
-      "Formatos optimizados para televisión, web y redes sociales"
+      "Estrategia, guiones técnicos y asesoría narrativa",
+      "Rodaje dentro y fuera del GAM con equipo 4K",
+      "Iluminación profesional y captura de audio directo",
+      "Montaje, corrección de color (Color Grading) y etalonaje",
+      "Diseño de sonido, efectos visuales y subtitulado dinámico"
     ],
-    fullDesc: "Damos vida a historias cinematográficas con alto estándar estético. Desde spots publicitarios hasta la cobertura de grandes eventos corporativos en Costa Rica y la región LatAm.",
-    priceBase: 750
+    fullDesc: "Transformamos conceptos e historias en experiencias audiovisuales cinematográficas de alto impacto. Desarrollamos producciones integrales adaptadas a las metas narrativas y comerciales de cada cliente, combinando tecnología de vanguardia, dirección artística y un flujo de trabajo estructurado paso a paso.",
+    priceBase: 750,
+    phases: [
+      {
+        phaseNumber: "FASE 1",
+        title: "PREPRODUCCIÓN",
+        badge: "Estrategia & Planificación",
+        description: "Es fundamental entender la necesidad del cliente para poder ayudar a desarrollar la idea con una solución audiovisual que cumpla y supere las expectativas, brindando estrategia integral como guiones técnicos, asesoría, diálogos y todo lo que se necesita para preparar la producción con máxima precisión.",
+        processes: [
+          "Entendimiento y diagnóstico de la necesidad del cliente",
+          "Desarrollo de la idea y propuesta audiovisual a la medida",
+          "Elaboración de guiones técnicos y literarios",
+          "Asesoría creativa, diálogos y desglose narrativo",
+          "Plan de rodaje y preparación logística integral"
+        ],
+        pillars: [
+          {
+            title: "Diagnóstico & Solución Audiovisual",
+            desc: "Entendemos la necesidad real del cliente para concebir una propuesta creativa y estratégica adaptada a sus metas."
+          },
+          {
+            title: "Guiones Técnicos & Diálogos",
+            desc: "Redacción de guiones literarios y técnicos, estructuración de diálogos, encuadres y tiempos de filmación."
+          },
+          {
+            title: "Asesoría & Preparación de Rodaje",
+            desc: "Acompañamiento integral en requerimientos, scouting de locaciones y checklist logístico previo al rodaje."
+          }
+        ]
+      },
+      {
+        phaseNumber: "FASE 2",
+        title: "PRODUCCIÓN",
+        badge: "Grabación & Rodaje Profesional",
+        description: "Grabación de contenido dentro y fuera del GAM. Contamos con equipo versátil y de nivel broadcast para adaptarnos a diferentes necesidades, con captura de imagen cinematográfica, audio profesional, esquemas de iluminación y herramientas técnicas que permiten grabaciones desde Full HD hasta 4K.",
+        processes: [
+          "Grabación de contenido dentro y fuera del GAM",
+          "Captura de imagen cinematográfica en Full HD y 4K",
+          "Captura y microfonía de audio directo profesional",
+          "Iluminación profesional para set, estudio y exteriores",
+          "Dirección en escena y herramientas avanzadas de rodaje"
+        ],
+        pillars: [
+          {
+            title: "Cobertura Dentro y Fuera del GAM",
+            desc: "Movilidad técnica y flexibilidad para rodar en cualquier ubicación geográfica requerida por el proyecto."
+          },
+          {
+            title: "Captura de Imagen Full HD a 4K",
+            desc: "Equipos de última generación con ópticas de alta definición para una estética cinematográfica nítida y moderna."
+          },
+          {
+            title: "Audio, Iluminación & Soporte Profesional",
+            desc: "Captura de sonido claro y envolvente, iluminación controlada y estabilización técnica de nivel publicitario."
+          }
+        ]
+      },
+      {
+        phaseNumber: "FASE 3",
+        title: "POSTPRODUCCIÓN",
+        badge: "Edición & Acabado Cinematográfico",
+        description: "Edición del material donde nos adaptamos a cada requerimiento con los mejores programas de edición de la industria, garantizando un acabado audiovisual impecable y de máximo dinamismo a través de 4 etapas esenciales:",
+        processes: [
+          "Montaje y corte principal en timeline eliminando silencios",
+          "Tratamiento de audio, limpieza, EQ, música y SFX",
+          "Corrección de color y etalonaje (Color Grading) unificado",
+          "Efectos visuales, motion graphics y subtítulos dinámicos",
+          "Exportación final en alta resolución optimizada para plataformas"
+        ],
+        pillars: [
+          {
+            title: "Montaje o corte principal",
+            desc: "Se colocan los mejores clips en la línea de tiempo (timeline) siguiendo la narrativa o el guion, uniendo las secuencias y eliminando los tiempos muertos o silencios."
+          },
+          {
+            title: "Tratamiento de audio",
+            desc: "Se limpia el sonido, se ajustan los volúmenes, se añaden música de fondo, efectos de sonido (SFX) y se ecualiza para que las voces se escuchen con claridad."
+          },
+          {
+            title: "Corrección de color y etalonaje (Color Grading)",
+            desc: "Se unifica el tono, la luz y el color de las diferentes cámaras o planos para darle una estética visual coherente al proyecto."
+          },
+          {
+            title: "Efectos, gráficos y subtítulos",
+            desc: "Se agregan transiciones, textos, animaciones, elementos visuales (PNG) o subtítulos para dinamizar el video."
+          }
+        ]
+      }
+    ]
   }
 ];
 

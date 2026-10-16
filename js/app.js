@@ -591,9 +591,113 @@ function updateActiveServicePanel(animate = true) {
     `;
   }
 
+  const serviceTypesHtml = service.serviceTypes && service.serviceTypes.length > 0 ? `
+    <div class="animation-billboard-wrapper" onmouseenter="pauseBillboardTimer()" onmouseleave="resumeBillboardTimer()">
+      <div class="service-deliverables-title">Formatos & Tipos de Animación Digital</div>
+
+      <!-- Cartelera Central: 2 Columnas (Recuadro 1:1 a la izquierda, Texto a la derecha) -->
+      <div class="billboard-stage" id="billboardStage">
+        <!-- Columna Izquierda: Recuadro Cuadrado para Video -->
+        <div class="billboard-video-col">
+          <div class="billboard-square-box" id="billboardVideoSquare">
+            <video class="billboard-video-player" id="billboardVideoPlayer" src="${service.serviceTypes[0].video}" autoplay muted loop playsinline></video>
+            <div class="billboard-glow-accent"></div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Texto & Detalles del Tipo de Animación -->
+        <div class="billboard-content-col">
+          <h3 class="billboard-title" id="billboardTitle">${service.serviceTypes[0].title}</h3>
+          <div class="billboard-subtitle" id="billboardSubtitle">${service.serviceTypes[0].subtitle || ''}</div>
+          <p class="billboard-desc" id="billboardDesc">${service.serviceTypes[0].desc}</p>
+          
+          <div class="billboard-tags" id="billboardTags">
+            ${service.serviceTypes[0].tags.map(t => `<span class="service-type-tag">${t}</span>`).join('')}
+          </div>
+
+          <!-- Controles Manuales Anterior / Siguiente -->
+          <div class="billboard-controls-row">
+            <button type="button" class="billboard-ctrl-btn" onclick="prevBillboardSlide()" aria-label="Anterior">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <span>Anterior</span>
+            </button>
+            <button type="button" class="billboard-ctrl-btn" onclick="nextBillboardSlide()" aria-label="Siguiente">
+              <span>Siguiente</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ` : '';
+
+  const brandPackageHtml = service.packageIncludes ? `
+    <div class="brand-package-wrapper">
+      <div class="brand-package-header-row">
+        <div class="service-deliverables-title">${service.packageIncludes.title || 'Este Paquete Incluye:'}</div>
+        <div class="brand-package-subtitle-badge">
+          <span>Identidad Completa + Regalía</span>
+        </div>
+      </div>
+
+      <div class="brand-package-container">
+        <!-- 2 Columnas de Entregables Principales -->
+        <div class="brand-package-grid">
+          ${service.packageIncludes.columns.map((col, cIdx) => `
+            <div class="brand-package-col-card">
+              <div class="brand-package-col-header">
+                <div class="brand-package-col-icon-wrap">
+                  ${col.icon}
+                </div>
+                <div>
+                  <h4 class="brand-package-col-title">${col.title}</h4>
+                  <span class="brand-package-col-badge">${col.badge}</span>
+                </div>
+              </div>
+              <ul class="brand-package-list">
+                ${col.items.map(item => `
+                  <li class="brand-package-list-item">
+                    <span class="brand-package-bullet">
+                      ${checkIcon}
+                    </span>
+                    <span class="brand-package-text">${item}</span>
+                  </li>
+                `).join('')}
+              </ul>
+
+              ${(col.id === 'redes-sociales' || cIdx === 1) && service.packageIncludes.regalia ? `
+                <div class="brand-regalia-nested-box">
+                  <div class="brand-regalia-nested-header">
+                    <div class="brand-regalia-nested-title-wrap">
+                      <div class="brand-regalia-nested-icon">
+                        ${service.packageIncludes.regalia.icon}
+                      </div>
+                      <div>
+                        <h4 class="brand-regalia-nested-title">${service.packageIncludes.regalia.title}</h4>
+                      </div>
+                    </div>
+                    <span class="brand-regalia-nested-badge">${service.packageIncludes.regalia.badge || 'Cortesía Exclusiva'}</span>
+                  </div>
+                  <ul class="brand-regalia-nested-list">
+                    ${service.packageIncludes.regalia.items.map(item => `
+                      <li class="brand-regalia-nested-item">
+                        <span class="brand-regalia-nested-bullet">★</span>
+                        <span class="brand-regalia-nested-text">${item}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  ` : '';
+
   const methodologyHtml = service.phases ? `
     <div class="service-phases-wrapper">
-      <div class="service-deliverables-title">Metodología & Procesos del Servicio por Fases</div>
+      <div class="service-deliverables-title">${service.methodologyTitle || 'Metodología & Procesos del Servicio por Fases'}</div>
       <div class="service-phases-grid">
         ${service.phases.map((phase, pIdx) => `
           <div class="service-phase-card" id="service-phase-card-${pIdx}">
@@ -604,6 +708,19 @@ function updateActiveServicePanel(animate = true) {
             <h4 class="phase-card-title">${phase.title}</h4>
             <p class="phase-card-desc">${phase.description}</p>
             
+            ${phase.pillars && phase.pillars.length > 0 ? `
+              <div class="phase-pillars-grid">
+                ${phase.pillars.map(pillar => `
+                  <div class="phase-pillar-item">
+                    <div class="phase-pillar-header">
+                      <strong class="phase-pillar-title">${pillar.title}</strong>
+                    </div>
+                    <p class="phase-pillar-desc">${pillar.desc}</p>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+
             <div class="phase-ticker-wrapper">
               <div class="phase-ticker-label">PROCESOS INCLUIDOS:</div>
               <div class="phase-process-ticker-pill">
@@ -648,6 +765,10 @@ function updateActiveServicePanel(animate = true) {
         </div>
       </div>
 
+      ${serviceTypesHtml}
+
+      ${brandPackageHtml}
+
       ${methodologyHtml}
 
       <div class="service-projects-header" id="serviceProjectsHeader">
@@ -665,9 +786,116 @@ function updateActiveServicePanel(animate = true) {
   if (service.phases) {
     initPhaseTickers(service.phases);
   }
+  if (service.serviceTypes && service.serviceTypes.length > 0) {
+    initAnimationBillboard(service.serviceTypes);
+  } else {
+    if (billboardInterval) {
+      clearInterval(billboardInterval);
+      billboardInterval = null;
+    }
+  }
 }
 
 let phaseTickerIntervals = [];
+
+/* ==========================================================================
+   Controlador de Cartelera de Animación (10s Rotación Automática)
+   ========================================================================== */
+let billboardInterval = null;
+let currentBillboardIndex = 0;
+let billboardData = [];
+
+function initAnimationBillboard(types) {
+  if (billboardInterval) {
+    clearInterval(billboardInterval);
+    billboardInterval = null;
+  }
+  if (!types || types.length === 0) return;
+
+  billboardData = types;
+  currentBillboardIndex = 0;
+  updateBillboardDOM(0, false);
+  startBillboardTimer();
+}
+
+function startBillboardTimer() {
+  if (billboardInterval) {
+    clearInterval(billboardInterval);
+  }
+
+  billboardInterval = setInterval(() => {
+    currentBillboardIndex = (currentBillboardIndex + 1) % billboardData.length;
+    updateBillboardDOM(currentBillboardIndex, true);
+  }, 10000);
+}
+
+function updateBillboardDOM(index, animate = true) {
+  const item = billboardData[index];
+  if (!item) return;
+
+  const stage = document.getElementById('billboardStage');
+  if (animate && stage) {
+    stage.classList.add('billboard-fade-transition');
+    setTimeout(() => {
+      renderBillboardContent(item, index);
+      stage.classList.remove('billboard-fade-transition');
+    }, 200);
+  } else {
+    renderBillboardContent(item, index);
+  }
+}
+
+function renderBillboardContent(item, index) {
+  const videoPlayer = document.getElementById('billboardVideoPlayer');
+  const title = document.getElementById('billboardTitle');
+  const subtitle = document.getElementById('billboardSubtitle');
+  const desc = document.getElementById('billboardDesc');
+  const tags = document.getElementById('billboardTags');
+
+  if (videoPlayer && item.video) {
+    videoPlayer.src = item.video;
+    videoPlayer.load();
+    const playPromise = videoPlayer.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {});
+    }
+  }
+  if (title) title.textContent = item.title;
+  if (subtitle) subtitle.textContent = item.subtitle || '';
+  if (desc) desc.textContent = item.desc;
+  if (tags && item.tags) {
+    tags.innerHTML = item.tags.map(t => `<span class="service-type-tag">${t}</span>`).join('');
+  }
+}
+
+window.selectBillboardSlide = function(index) {
+  currentBillboardIndex = index;
+  updateBillboardDOM(index, true);
+  startBillboardTimer();
+};
+
+window.prevBillboardSlide = function() {
+  currentBillboardIndex = (currentBillboardIndex - 1 + billboardData.length) % billboardData.length;
+  updateBillboardDOM(currentBillboardIndex, true);
+  startBillboardTimer();
+};
+
+window.nextBillboardSlide = function() {
+  currentBillboardIndex = (currentBillboardIndex + 1) % billboardData.length;
+  updateBillboardDOM(currentBillboardIndex, true);
+  startBillboardTimer();
+};
+
+window.pauseBillboardTimer = function() {
+  if (billboardInterval) {
+    clearInterval(billboardInterval);
+    billboardInterval = null;
+  }
+};
+
+window.resumeBillboardTimer = function() {
+  startBillboardTimer();
+};
 
 function initPhaseTickers(phases) {
   phaseTickerIntervals.forEach(id => clearInterval(id));
@@ -1708,112 +1936,80 @@ const EQUIPO_MEMBERS = [
     id: 0,
     name: "Oscar Chavarría",
     role: "Lead Manager",
-    photo: "EQUIPO/1 OSCAR.jpg",
-    desc: "Lidera la visión estratégica y creativa de Visual Oscart, coordinando proyectos integrales para potenciar la identidad visual y comunicación digital de marcas en Costa Rica y Latinoamérica.",
-    softwares: []
+    photo: "EQUIPO/1%20OSCAR.jpg?v=20261015",
+    desc: "Lidera la visión y dirección creativa de Visual Oscart, coordinando proyectos integrales, animación digital 3D y campañas estratégicas en redes sociales para impulsar marcas de alto impacto.",
+    softwares: [
+      "APPS/OSCAR%201.jpg?v=20261015",
+      "APPS/OSCAR%202.jpg?v=20261015",
+      "APPS/OSCAR%203.jpg?v=20261015",
+      "APPS/OSCAR%204.jpg?v=20261015"
+    ]
   },
   {
     id: 1,
     name: "Mario Chavarría",
-    role: "Postproducción Audiovisual",
-    photo: "EQUIPO/3 MARIO.jpg",
-    desc: "Especialista en animación digital, edición de video y motion graphics, dando vida, ritmo y la máxima calidad visual a cada pieza publicitaria y de contenido de nuestra agencia.",
-    softwares: []
+    role: "Producción Audiovisual",
+    photo: "EQUIPO/3%20MARIO.jpg?v=20261015",
+    desc: "Especialista en producción y edición de video, postproducción avanzada, corrección de color y motion graphics, aportando dinamismo y el máximo estándar visual a cada pieza publicitaria.",
+    softwares: [
+      "APPS/MARIO%201.jpg?v=20261015",
+      "APPS/MARIO%202.jpg?v=20261015",
+      "APPS/MARIO%203.jpg?v=20261015",
+      "APPS/MARIO%204.jpg?v=20261015"
+    ]
   },
   {
     id: 2,
-    name: "Anne Regniet",
+    name: "Annemarie Regniet",
     role: "Community Manager",
-    photo: "EQUIPO/2 ANNE.jpg",
-    desc: "Gestiona y conecta la presencia digital de nuestros clientes en redes sociales, desarrollando contenido estratégico, interacción de comunidad y campañas de alto impacto.",
-    softwares: []
+    photo: "EQUIPO/2%20ANNE.jpg?v=20261015",
+    desc: "Gestiona la presencia digital de las marcas en redes sociales, estructurando calendarios estratégicos, programación organizada de publicaciones e interacción constante con la comunidad.",
+    softwares: [
+      "APPS/ANNE%201.jpg?v=20261015",
+      "APPS/ANNE%202.jpg?v=20261015",
+      "APPS/ANNE%203.jpg?v=20261015",
+      "APPS/ANNE%204.jpg?v=20261015"
+    ]
   }
 ];
 
-let currentEquipoIndex = 0;
+/* ==========================================================================
+   Sección Interactiva de Equipo - Acordeón Horizontal Dinámico
+   ========================================================================== */
+window.activateAccordionCard = function(index) {
+  const track = document.getElementById('equipoAccordionTrack');
+  const cards = document.querySelectorAll('.equipo-accordion-card');
+  if (!cards || cards.length === 0) return;
+
+  if (track) track.classList.add('has-active');
+
+  cards.forEach((card, i) => {
+    if (i === index) {
+      card.classList.add('active');
+    } else {
+      card.classList.remove('active');
+    }
+  });
+};
+
+window.resetAccordionCards = function() {
+  const track = document.getElementById('equipoAccordionTrack');
+  const cards = document.querySelectorAll('.equipo-accordion-card');
+  if (!cards || cards.length === 0) return;
+
+  if (track) track.classList.remove('has-active');
+  cards.forEach(card => card.classList.remove('active'));
+};
+
+window.toggleAccordionCard = function(index) {
+  const cards = document.querySelectorAll('.equipo-accordion-card');
+  if (cards[index] && cards[index].classList.contains('active')) {
+    window.resetAccordionCards();
+  } else {
+    window.activateAccordionCard(index);
+  }
+};
 
 function initEquipoShowcase() {
-  collapseTeamMember();
+  window.resetAccordionCards();
 }
-
-function renderEquipoMember(index, animate = false) {
-  currentEquipoIndex = index;
-  const member = EQUIPO_MEMBERS[index];
-  if (!member) return;
-
-  const photoEl = document.getElementById('equipoPhoto');
-  const infoEl = document.getElementById('equipoInfoContent');
-  const roleEl = document.getElementById('equipoRole');
-  const nameEl = document.getElementById('equipoName');
-  const descEl = document.getElementById('equipoDesc');
-  const badgeEl = document.getElementById('equipoIndexBadge');
-  const softwaresGrid = document.getElementById('equipoSoftwaresGrid');
-
-  const updateContent = () => {
-    if (photoEl) {
-      photoEl.src = member.photo;
-      photoEl.alt = `${member.name} - ${member.role}`;
-    }
-    if (roleEl) roleEl.textContent = member.role;
-    if (nameEl) nameEl.textContent = member.name;
-    if (descEl) descEl.textContent = member.desc;
-    if (badgeEl) badgeEl.textContent = `0${index + 1} / 03`;
-
-    if (softwaresGrid) {
-      if (member.softwares && member.softwares.length > 0) {
-        softwaresGrid.innerHTML = member.softwares.map(item => `
-          <div class="equipo-software-box" title="${typeof item === 'object' ? item.name : 'Software'}">
-            <img src="${typeof item === 'object' ? item.icon : item}" alt="${typeof item === 'object' ? item.name : 'Software'}">
-          </div>
-        `).join('');
-      } else {
-        // 4 ranuras elegantes listas para los iconos de software que pase el usuario
-        softwaresGrid.innerHTML = `
-          <div class="equipo-software-box" title="Software 1"><span style="font-size:0.75rem; color:#64748B; font-weight:700;">#1</span></div>
-          <div class="equipo-software-box" title="Software 2"><span style="font-size:0.75rem; color:#64748B; font-weight:700;">#2</span></div>
-          <div class="equipo-software-box" title="Software 3"><span style="font-size:0.75rem; color:#64748B; font-weight:700;">#3</span></div>
-          <div class="equipo-software-box" title="Software 4"><span style="font-size:0.75rem; color:#64748B; font-weight:700;">#4</span></div>
-        `;
-      }
-    }
-  };
-
-  if (animate && photoEl && infoEl) {
-    photoEl.classList.add('fade-out');
-    infoEl.classList.add('fade-out');
-
-    setTimeout(() => {
-      updateContent();
-      if (photoEl) photoEl.classList.remove('fade-out');
-      if (infoEl) infoEl.classList.remove('fade-out');
-    }, 200);
-  } else {
-    updateContent();
-  }
-}
-
-window.expandTeamMember = function(index) {
-  const normalGrid = document.getElementById('equipoGridNormal');
-  const expandedCard = document.getElementById('equipoInteractiveCard');
-  if (!expandedCard) return;
-
-  renderEquipoMember(index, false);
-
-  if (normalGrid) normalGrid.style.display = 'none';
-  expandedCard.style.display = 'grid';
-  expandedCard.style.animation = 'equipoFadeIn 0.3s ease';
-};
-
-window.collapseTeamMember = function() {
-  const normalGrid = document.getElementById('equipoGridNormal');
-  const expandedCard = document.getElementById('equipoInteractiveCard');
-  if (!normalGrid || !expandedCard) return;
-
-  expandedCard.style.display = 'none';
-  normalGrid.style.display = 'grid';
-  normalGrid.style.animation = 'equipoFadeIn 0.3s ease';
-};
-
-window.selectTeamMember = function(index) {
-  window.expandTeamMember(index);
-};
